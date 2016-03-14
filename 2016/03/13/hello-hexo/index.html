@@ -63,7 +63,7 @@
 1.先说说安装sublime + markdown吧    直到现在还不太清楚markdown到底是什么东东，只知道很火的样子，大家都在捧，作为跨行过来，初出江湖的小白，我觉得最明智的做法就是跟着主流走">
 <meta property="og:type" content="article">
 <meta property="og:title" content="搭建hexo + github + sublime + markdown博客系统成功！">
-<meta property="og:url" content="http://yoursite.com/2016/03/13/hello-hexo/index.html">
+<meta property="og:url" content="http://Wangct23.github.io/2016/03/13/hello-hexo/index.html">
 <meta property="og:site_name" content="Alphabet">
 <meta property="og:description" content="纸上得来终觉浅，绝知此事要躬行！
 第一篇文档，没想好写什么。简单记录一下这次的历程。
@@ -83,7 +83,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     scheme: 'Mist',
-    sidebar: {"position":"left","display":"post"},
+    sidebar: {"position":"left","display":"always"},
     fancybox: true,
     motion: true,
     duoshuo: {
@@ -213,6 +213,8 @@
             
 
   <div id="posts" class="posts-expand">
+    <!--render方法第二个参数is_index为是否为首页
+    #第三个参数is_pv为我们刚才设置的是否显示计数-->
     
 
   
@@ -254,6 +256,12 @@
 
           
             
+          
+
+          
+          <span>&nbsp; | &nbsp;
+          <span id="busuanzi_value_page_pv" ></span>次阅读
+          </span>    
           
 
           
@@ -361,7 +369,7 @@
       <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
-               src="/images/default_avatar.jpg"
+               src="/images/avatar.jpg"
                alt="wangct" />
           <p class="site-author-name" itemprop="name">wangct</p>
           <p class="site-description motion-element" itemprop="description">_blank</p>
@@ -444,6 +452,11 @@
     NexT.Mist
   </a>
 </div>
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+本站总访问量 <span id="busuanzi_value_site_pv"></span> &nbsp&nbsp&nbsp
+您是第<span id="busuanzi_value_site_uv"></span>个来到的小伙伴
 
 
 
