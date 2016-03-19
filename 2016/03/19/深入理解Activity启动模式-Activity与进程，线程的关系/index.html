@@ -1,0 +1,803 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+
+
+
+
+  <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="activity启动模式特点, activity启动模式详解, android activity launchmode, android activity启动模式," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.5.0" />
+
+
+
+
+
+
+<meta name="description" content="概述Android官网介绍Activity的启动模式时比较含糊，介绍Application，Activity，Task，Process，Thread等概念以及它们之间的关系时，也没有说得清楚。大家看了Android官网对Activity启动模式的介绍后，可能会觉得很困惑。官网介绍singleTask启动模式时，说只要启动singleTask启动模式的Activity就会新建Task，但在实际操作中">
+<meta property="og:type" content="article">
+<meta property="og:title" content="深入理解Activity启动模式">
+<meta property="og:url" content="http://Wangct23.github.io/2016/03/19/深入理解Activity启动模式-Activity与进程，线程的关系/index.html">
+<meta property="og:site_name" content="Alphabet">
+<meta property="og:description" content="概述Android官网介绍Activity的启动模式时比较含糊，介绍Application，Activity，Task，Process，Thread等概念以及它们之间的关系时，也没有说得清楚。大家看了Android官网对Activity启动模式的介绍后，可能会觉得很困惑。官网介绍singleTask启动模式时，说只要启动singleTask启动模式的Activity就会新建Task，但在实际操作中">
+<meta property="og:image" content="http://7xrtw9.com1.z0.glb.clouddn.com/backstack_base.jpg">
+<meta property="og:image" content="http://7xrtw9.com1.z0.glb.clouddn.com/backstack_H.jpg">
+<meta property="og:image" content="http://7xrtw9.com1.z0.glb.clouddn.com/backstack_move.jpg">
+<meta property="og:image" content="http://7xrtw9.com1.z0.glb.clouddn.com/standard.png">
+<meta property="og:image" content="http://7xrtw9.com1.z0.glb.clouddn.com/singleTop_bad.png">
+<meta property="og:image" content="http://7xrtw9.com1.z0.glb.clouddn.com/singleTop_good.png">
+<meta property="og:image" content="http://7xrtw9.com1.z0.glb.clouddn.com/singleTask_bad.png">
+<meta property="og:image" content="http://7xrtw9.com1.z0.glb.clouddn.com/singleTask_good.png">
+<meta property="og:image" content="http://7xrtw9.com1.z0.glb.clouddn.com/singeleTask_before.png">
+<meta property="og:image" content="http://7xrtw9.com1.z0.glb.clouddn.com/afterjump.png">
+<meta property="og:image" content="http://7xrtw9.com1.z0.glb.clouddn.com/singleInstance_bad.png">
+<meta property="og:image" content="http://7xrtw9.com1.z0.glb.clouddn.com/singleInstance_good.png">
+<meta property="og:updated_time" content="2016-03-19T02:33:44.838Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="深入理解Activity启动模式">
+<meta name="twitter:description" content="概述Android官网介绍Activity的启动模式时比较含糊，介绍Application，Activity，Task，Process，Thread等概念以及它们之间的关系时，也没有说得清楚。大家看了Android官网对Activity启动模式的介绍后，可能会觉得很困惑。官网介绍singleTask启动模式时，说只要启动singleTask启动模式的Activity就会新建Task，但在实际操作中">
+<meta name="twitter:image" content="http://7xrtw9.com1.z0.glb.clouddn.com/backstack_base.jpg">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"always"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
+  };
+</script>
+
+  <title> 深入理解Activity启动模式 | Alphabet </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Alphabet</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">A~Z</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-ategories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-question-circle fa-fw"></i> <br />
+            
+            menu.ategories
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    <!--render方法第二个参数is_index为是否为首页
+    #第三个参数is_pv为我们刚才设置的是否显示计数-->
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                深入理解Activity启动模式
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-03-19T00:00:00+08:00" content="2016-03-19">
+              2016-03-19
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          <span>&nbsp; | &nbsp;
+          <span id="busuanzi_value_page_pv" ></span>次阅读
+          </span>    
+          
+
+          
+
+          
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h3 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h3><p>Android官网介绍Activity的启动模式时比较含糊，介绍Application，Activity，Task，Process，Thread等概念以及它们之间的关系时，也没有说得清楚。大家看了Android官网对Activity启动模式的介绍后，可能会觉得很困惑。官网介绍singleTask启动模式时，说只要启动singleTask启动模式的Activity就会新建Task，但在实际操作中，如果同一个应用的两个Activity，如果其中一个Activity的启动模式为singleTask，一个Activity的启动模式为standard，从其中一个Activity跳转到另外一个Activity，并不会新建Task。</p>
+<p>为了解除这些困惑，对Activity启动模式做了深入研究，因此写了这一系列博客，详细阐述Application，Activity，Task，Process，Thread等概念概念之间的关系，以及启动模式各自的特点，希望能对大家理解这些概念有所帮助。</p>
+<p>本系列文章共分3部分:</p>
+<ul>
+<li>深入理解Activity启动模式(一)–Activity与进程，线程的关系</li>
+<li>深入理解Activity启动模式(二)–Activity,回退栈,Task之间的关系</li>
+<li>深入理解Activity启动模式(三)–Activity启动模式特点</li>
+</ul>
+<a id="more"></a>
+<h3 id="Application-Activity-Process-Thread之间的关系"><a href="#Application-Activity-Process-Thread之间的关系" class="headerlink" title="Application,Activity, Process,Thread之间的关系"></a>Application,Activity, Process,Thread之间的关系</h3><p>我们知道在AndroidManifest.xml里可声明Application，它可以由4大组件组成:Activity，Service，ContentProvider，BroadcastReceiver。声明Application时可以用android:name声明本应用使用的Application类，如果没有声明，则会直接使用Android框架的Application类建立实例对象。</p>
+<p>应用第一次启动时，会启动一个新进程，该进程用应用的包名作为进程名。该进程会启动主线程ActivityThread，也叫做UI线程，UI的绘制都在该线程里完成。该进程里还有一些Binder服务线程，用于和系统进行通信。</p>
+<p>另外，我们知道Activity跳转时，可以跨应用跳转，也就说应用app1里的Activity A可以跳转到应用app2里的Activity B。如果Activity A和Activity B的启动模式为standard模式，从A跳转到B后，Activity A和Activity B对应的ActivityRecord会放在同一个task里(ActivityRecord，Task都由系统进程管理，下一部分内容会介绍这些概念)，但是Acitivity A和Activity B的实例对象会放在不同的进程里。假设app1的包名为com.cloud.app1，app2的包名为com.cloud.app2，那么Activity A的实例对象位于进程com.cloud.app1里，Activity B的实例对象位于进程com.cloud.app2里。</p>
+<p>也就是说，每个应用的组件都会运行在对应的应用进程里，该进程用应用的包名作为进程名。该进程里有一个主线程，也叫做UI线程，应用组件都运行在UI线程里。只有一种情况例外，如果声明组件时用android:process设置了进程名，该组件就会运行在一个新进程里，不是以应用的包名作为进程名，而是用包名+:+设置的值作为进程名</p>
+<p>所以一般情况下service，receiver也会运行在ui线程里，如果在service，receiver的生命周期方法里做一些耗时的操作，系统会提示ANR(Activity Not Responde)错误。</p>
+<h3 id="Activity-回退栈-Task之间的关系"><a href="#Activity-回退栈-Task之间的关系" class="headerlink" title="Activity,回退栈,Task之间的关系"></a>Activity,回退栈,Task之间的关系</h3><p>Activity启动时ActivityManagerService会为其生成对应的ActivityRecord记录，并将其加入到回退栈(back stack)中，另外也会将ActivityRecord记录加入到某个Task中。请记住，ActivityRecord，backstack，Task都是ActivityManagerService的对象，由system_server进程负责维护，而不是由应用进程维护。</p>
+<p>在回退栈里属于同一个task的ActivityRecord会放在一起，也会形成栈的结构，也就是说后启动的Activity对应的ActivityRecord会放在task的栈顶。</p>
+<p>假设Activity的跳转顺序:A–&gt;B–&gt;C，A,B,C对应的ActivityRecord属于同一个Task，此时从C跳转至D，再跳转至E，C和D不属于同一个Task，D和E属于同一个Task，那现在的back stack结构如下所示:</p>
+<p><img src="http://7xrtw9.com1.z0.glb.clouddn.com/backstack_base.jpg" alt="backstack_base"></p>
+<p>现在A,B,C属于task1,C在task1的栈顶，D,E属于task2，E在task2的栈顶。也可以看出来task2位于整个回退栈的栈顶，也就是说task2在task1的上面。如果此时不断按回退键，看到的Activity的顺序会是E–&gt;D–&gt;C–&gt;B–&gt;A。</p>
+<p>另外需注意，ActivityManagerService不仅会往回退栈里添加新的ActivityRecord，还会移动回退栈里的ActivityRecord，移动时以task为单位进行移动，而不会移动单个AcitivityRecord。还是针对上面的例子，假设此时按了Home键，那么会将Home应用程序(也叫做Launcher应用程序)的task移动至栈顶，那么此时回退栈如下所示:</p>
+<p><img src="http://7xrtw9.com1.z0.glb.clouddn.com/backstack_H.jpg" alt="backstack_H"></p>
+<p>可以看到Home应用程序的Activity H对应的Activity Record移动到了回退栈的栈顶。Home应用程序的Activity H对回退按键的响应做了特殊处理，如果此时按回退键，是看不到Activity E的。</p>
+<p>如果此时通过Launcher程序再打开Activity A所在的应用，那么会显示Activity C，因为会将Activity A对应的Activity Record所在的task移动至回退栈的栈顶，此时回退栈如下所示:</p>
+<p><img src="http://7xrtw9.com1.z0.glb.clouddn.com/backstack_move.jpg" alt="backstack_move"></p>
+<p>现在task1移动到了栈顶，Home应用程序的task位于task1的下面，而task2位于Home应用程序的task之下，此时如果按返回键，那么Activity的显示顺序是:C–&gt;B–&gt;A–&gt;H，不会显示E。</p>
+<p>当然我们也可以在Launcher应用程序里打开D所在的应用，这样会将D,E所在的task2移动至栈顶。</p>
+<p>现在应该对task有所理解了，task其实是由ActivityRecord组成的栈，多个task以栈的形式组成了回退栈，ActivityManagerService移动回退栈里的ActivityRecord时以task为单位移动。</p>
+<p>我们知道跨应用跳转Activity时，两个Activity对应的ActivityRecord可属于同一个task，那什么情况下两个ActivityRecord会属于不同的task呢?或者说，Activity跳转时，什么情况下会产生新的task呢？</p>
+<p>这个问题和Activity的启动模式，taskAffinity，启动Activity时为Intent设置的flag等因素相关。</p>
+<p>先说一下taskAffinity，每个Activity的taskAffinity属性值默认为包名，也就是说如果Activity A所在的应用的包名为com.cloud.app1，那么Activity A的taskAffinity属性值为com.cloud.app1，我们可以在AndroidManifest.xml里通过android:taskAffinity属性为Activity设置特殊的taskAffinity，假设我们在AndroidManifest.xml里为Activity A设置了android:taskAffinity=”:test”，那么Activity A的taskAffinity值为com.cloud.app1:test。</p>
+<p>那么我现在可以明白:不同应用的Activity的taskAffinity属性值会不一样。</p>
+<p>假设Activity A和Activity B的启动模式都是standard，二者taskAffinity属性值不一样，从Activity A跳转至Activity B，那么它们对应的ActivityRecord会属于同一个task。</p>
+<p>假设Activity A的启动模式是standard，Activity B的启动模式singleTask，二者taskAffinity属性值一样，此时从Activity A跳转至Activity B，那么它们对应的ActivityRecord会属于同一个task。因为只要两个Activity的taskAffinity属性一致，即使其中有一个Activity的启动模式为singleTask，它们对应的ActivityRecord会放在同一个task里，不管是从某个Activity跳转到singleTask类型的Activity，还是从singleTask类型的Activity跳转到其他Activity都是如此，除非跳转的其他Activity的启动模式是singleInstance。这里的描述和官方文档很不一样，稍后会为大家介绍singleTask启动模式的特点。</p>
+<p>假设Activity A的启动模式是standard，Activity B的启动模式singleTask，二者taskAffinity属性值不 一样，此时从Activity A跳转至Activity B，那么它们对应的ActivityRecord会属于不同的Task。</p>
+<p>还有其他很多情况会产生新的task，大家可以看接下来关于启动模式的特点的介绍。</p>
+<h3 id="Activity-启动模式特点"><a href="#Activity-启动模式特点" class="headerlink" title="Activity 启动模式特点"></a>Activity 启动模式特点</h3><p>Activity的启动模式共有4种，默认为standard，其它还有singleTop，singleTask，singleInstance，下面就这4种启动模式分别介绍它们的特点。</p>
+<h4 id="1-standard模式"><a href="#1-standard模式" class="headerlink" title="1)  standard模式"></a>1)  standard模式</h4><p>standard模式的Activity可以有多个ActivityRecord加入不同的task，同一个task也可存在多个ActivityRecord，并且ActivityRecord还可相邻。</p>
+<p>假设Activity A的启动模式为standard，那么可能存在如下图所示的回退栈:</p>
+<p><img src="http://7xrtw9.com1.z0.glb.clouddn.com/standard.png" alt="standard"></p>
+<p>假设Activity A启动Activity B，B的启动模式为standard模式</p>
+<p>B的ActivityRecord默认会放在A的ActivityRecord所在的task里，即使B和A的taskAffinity不同也会如此，这也意味着如果B和A属于不同的应用，B的ActivityRecord也会放在A的ActivityRecord所在的task里。</p>
+<p>但是下面两种情况不会将A和B的ActivityRecord放在同一个task里:</p>
+<p>如果Activity A的启动模式为singleInstance，则会查找整个回退栈，直到找到和B相关的task，然后把B的ActivityRecord放到该task里，如果没有找到相关的task，则新建task，将B的ActivityRecord放到新task里。后面会介绍如何判断Activity和某个task相关。</p>
+<p>如果Activity A的启动模式为singleTask，并且Activity A和Activity B的taskAffinity不一样，那么也会查找整个回退栈，直到找到和B相关的task，然后把B的ActivityRecord放到该task里。</p>
+<h4 id="2-singleTop模式"><a href="#2-singleTop模式" class="headerlink" title="2)  singleTop模式"></a>2)  singleTop模式</h4><p>singleTop模式与standard模式比较相似，singleTop模式的Activity可以有多个ActivityRecord加入不同的task，同一个task也可存在多个ActivityRecord,但是同一个task的ActivityRecord不可以相邻。</p>
+<p>假设Activity A的启动模式为singleTop，那么如下图所示的回退栈就是不合理的:</p>
+<p><img src="http://7xrtw9.com1.z0.glb.clouddn.com/singleTop_bad.png" alt="singleTop_bad"></p>
+<p>但是可存在如下图所示的回退栈:</p>
+<p><img src="http://7xrtw9.com1.z0.glb.clouddn.com/singleTop_good.png" alt="singleTop_good"></p>
+<p>假设Activity A启动了Activity B， 这时B在task的栈顶，B的启动模式为singleTop模式。此时从其它Activity也跳转至Activity B，并且启动的task也是已启动的A和B所在的task，或者A和 B所在的task本身就在回退栈的栈顶，那么不会新建B的ActivityRecord，而是会将启动Activity B的Intent传递给栈顶Activity B的ActivityRecrod对应的在应用进程的实例对象，调用它的onNewIntent方法。</p>
+<p>可以这样模拟此种情况:</p>
+<p>假设Activity A和Activity B在同一个应用app1里，A是入口Activity，A可跳转至Activity B，B的启动模式为singleTop。此时已从A跳转至B，通知栏有一个启动B的通知，点击通知后，就出现上述情况。</p>
+<h4 id="3-singleTask模式"><a href="#3-singleTask模式" class="headerlink" title="3)  singleTask模式"></a>3)  singleTask模式</h4><p>singleTask模式和standard模式，singleTop模式区别很大，singleTask模式的Activity在整个回退栈只可以有一个ActivityRecord，也就是说它只能属于某一个task，不可在多个task里存在ActivityRecord。但是在这个task里可以有其它Activity的ActivityRecord。</p>
+<p>假设Activity A的启动模式为singleTask，那么如下图所示的回退栈就是不合理的:</p>
+<p><img src="http://7xrtw9.com1.z0.glb.clouddn.com/singleTask_bad.png" alt="singleTask_bad"></p>
+<p>假设Activity A的启动模式为singleTask，那么如下图所示的回退栈就是合理的:</p>
+<p><img src="http://7xrtw9.com1.z0.glb.clouddn.com/singleTask_good.png" alt="singleTask_good"></p>
+<p>假设Activity A的启动模式为singleTask，那么和Activity A的ActivityRecord放在同一个task里的ActivityRecord所对应的Activity，必须与Activity A的taskAffinity相同。也就是说，Activity A的ActivityRecord只会和同一应用的其它Activity的ActivityRecord放在同一个task里，并且这些同一应用的其它Activity不能设置特殊的taskAffinity。</p>
+<p>singleTask模式的Activity还有另一个特点:</p>
+<p>假设Activity A的启动模式是singleTask，A所在的task里，A并没有处于栈顶，此时若从别的Activity跳转至Activity A，那么A所在的task里位于A之上的所有ActivityRecord都会被清除掉。</p>
+<p>跳转之前回退栈的示意图如下所示:</p>
+<p><img src="http://7xrtw9.com1.z0.glb.clouddn.com/singeleTask_before.png" alt="singeleTask_before"></p>
+<p>此时从E跳转至A之后，回退栈的示意图如下图所示:</p>
+<p><img src="http://7xrtw9.com1.z0.glb.clouddn.com/afterjump.png" alt="afterjump"></p>
+<p>也就是说位A所在的task里的C被清除了。</p>
+<p>另外需注意:</p>
+<p>只要两个Activity的taskAffinity属性一致，即使其中有一个Activity的启动模式为singleTask，它们对应的ActivityRecord会放在同一个task里，不管是从某个Activity跳转到singleTask类型的Activity，还是从singleTask类型的Activity跳转到其他Activity都是如此，除非跳转的其他Activity的启动模式是singleInstance。Android官方文档对singleTask启动模式的描述不准确。</p>
+<p>举例如下:</p>
+<p>假设某个应用有两个Activity A和Activity B，Activity A已启动，Activity B的启动模式为singleTask，Activity B还从未启动过，在AndroidManifest.xml里没有给这两个Activity设置特殊的taskAffinity。此时从Activity A跳转至Activity B，那么Activity B的ActivityRecord会放在Activity A的ActivityRecord所在的task里。</p>
+<h4 id="4-singleInstance模式"><a href="#4-singleInstance模式" class="headerlink" title="4)  singleInstance模式"></a>4)  singleInstance模式</h4><p>该启动模式和singleTask类似，singleInstance模式的Activity在整个回退栈只可以有一个ActivityRecord，也就是说它只能属于某一个task，不可在多个task里存在ActivityRecord，并且它所在的task不可再有其它Activity的ActivityRecord，即使是同一个应用内的其它Activity，也不可有它们的AcvitityRecord。</p>
+<p>假设Activity A的启动模式为singleInstance，那么如下图所示的回退栈就是不合理的:</p>
+<p><img src="http://7xrtw9.com1.z0.glb.clouddn.com/singleInstance_bad.png" alt="singleInstance_bad"></p>
+<p>假设Activity A的启动模式为singleInstance，那么如下图所示的回退栈就是合理的:</p>
+<p><img src="http://7xrtw9.com1.z0.glb.clouddn.com/singleInstance_good.png" alt="singleInstance_good"></p>
+<p>启动Activity时，有时需要查看回退栈，看是否有和这个Activity相关的task。Activity和某个task相关，有两种情况(假设Activity为A，相关的task为task1):</p>
+<ul>
+<li>1)  如果A的启动模式为singleInstance，那么task1只能包含1个ActivityRecord，并且ActivityRecord对应的Activity必须是A  </li>
+<li>2)A的启动模式不是singleInstance，A的taskAffinity属性和task1的taskAffinity属性必须一样。Task的taskAffinity属性由它包含的第1个ActivityRecord的taskAffinity属性决定。</li>
+</ul>
+<p>####注意####</p>
+<ul>
+<li>1)  从Launcher程序启动应用时，会先查找所有task，看是否有相关task，如果已有相关task，则会将相关task移动到回退栈的栈顶，然后显示栈顶Activity。查找相关task时，需看task是否和应用的入口Activity相关，入口Activity是指在AndroidManifest.xml里声明IntentFilter时，注明category为android.intent.category.LAUNCHER的Activity。如果入口Activity的启动模式为singleTask，不仅会将相关task移动到回退栈的栈顶，还会将该task里位于入口Activity之上的其它ActivityRecord全部清除掉  </li>
+<li>2)通过最近应用程序，切换应用时，会直接将应用图标对应的task移动到回退栈的栈顶，这样即使task里有singleTask类型的ActivityRecord，在它之上的ActivityRecord也不会被清除  </li>
+<li>3)  可以通过adb shell dumpsys activity activties查看系统task情况</li>
+</ul>
+<p>####思考问题####</p>
+<p>相信大家看了这篇博客以后，可以回答如下关于哪些情况下会产生新task的问题了</p>
+<ul>
+<li>1) 首次启动应用，是否会产生新的task?  </li>
+<li>2) 假设应用app1的入口Activity(Activity A)启动模式为standard,从A可跳转至Acitivity B，Activity B的启动模式为singleTask，那么启动应用后，从ActivityA跳转到ActivityB是否会产生新的task?  </li>
+<li>3) 假设应用app1的入口Activity是A,从A可跳转至B，从B可跳转至C,B的启动模式为singleTask，A和C的启动模式为standard，Activity的跳转顺序为A-&gt;B-&gt;C是否会产生新的task? 如果C的启动模式也为singleTask呢？ 如果C的启动模式为singleInstance呢?  </li>
+<li>4) 假设应用app1的入口Activity是A,从A可跳转至B, B的启动模式为singleTask，A的启动模式为standard,另一个应用app2有一个Activity C，C的启动模式为stanard，C也可跳转至B,目前已从A跳转到B，此时再打开应用app2，从C跳转至B,是否会产生新的task呢？ 如果应用app1没启动，是否会产生新的task呢?  </li>
+<li>5) 假设应用app1的入口Activity是A,从A可跳转至B,从B可跳转至C， B的启动模式为singleTask，A,C的启动模式为standard，从A跳转至B后，A会finish，假设此时A已跳转至B，B已跳转至C，此时通知栏有一个通知，可启动Activity B，那么点击通知后，会出现什么情况呢?</li>
+</ul>
+<p>转载自： <a href="http://www.cloudchou.com/android/post-755.html" title="非常感谢原作者的分享" target="_blank" rel="external">深入理解Activity启动模式</a></p>
+
+      
+    </div>
+
+    <div>
+      
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/activity启动模式特点-activity启动模式详解-android-activity-launchmode-android-activity启动模式/" rel="tag">#activity启动模式特点, activity启动模式详解, android activity launchmode, android activity启动模式</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/03/14/网络资源收集/" rel="next" title="网络资源收集">
+                <i class="fa fa-chevron-left"></i> 网络资源收集
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.jpg"
+               alt="wangct" />
+          <p class="site-author-name" itemprop="name">wangct</p>
+          <p class="site-description motion-element" itemprop="description">_blank</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">3</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+          
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc-indicator-top post-toc-indicator">
+            <i class="fa fa-angle-double-up"></i>
+          </div>
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#概述"><span class="nav-number">1.</span> <span class="nav-text">概述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Application-Activity-Process-Thread之间的关系"><span class="nav-number">2.</span> <span class="nav-text">Application,Activity, Process,Thread之间的关系</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Activity-回退栈-Task之间的关系"><span class="nav-number">3.</span> <span class="nav-text">Activity,回退栈,Task之间的关系</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Activity-启动模式特点"><span class="nav-number">4.</span> <span class="nav-text">Activity 启动模式特点</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-standard模式"><span class="nav-number">4.1.</span> <span class="nav-text">1)  standard模式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-singleTop模式"><span class="nav-number">4.2.</span> <span class="nav-text">2)  singleTop模式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-singleTask模式"><span class="nav-number">4.3.</span> <span class="nav-text">3)  singleTask模式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-singleInstance模式"><span class="nav-number">4.4.</span> <span class="nav-text">4)  singleInstance模式</span></a></li></ol></li></ol></div>
+            
+          </div>
+          <div class="post-toc-indicator-bottom post-toc-indicator">
+            <i class="fa fa-angle-double-down"></i>
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">wangct</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+本站总访问量 <span id="busuanzi_value_site_pv"></span> &nbsp&nbsp&nbsp
+您是第<span id="busuanzi_value_site_uv"></span>个来到的小伙伴
+
+
+
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+
+  
+
+
+
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=0.5.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=0.5.0"></script>
+
+
+
+  
+  
+
+  
+  
+<script type="text/javascript" src="/js/src/scrollspy.js?v=0.5.0"></script>
+
+<script type="text/javascript" id="sidebar.toc.highlight">
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+      toggleTOCOverflowIndicators();
+    }
+
+    function getTOCMaxHeight () {
+      var height = $('.sidebar').height() -
+                   $tocSelector.position().top -
+                   $('.post-toc-indicator-bottom').height();
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    function toggleTOCOverflowIndicators () {
+      tocOverflowIndicator(
+        '.post-toc-indicator-top',
+        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
+      );
+
+      tocOverflowIndicator(
+        '.post-toc-indicator-bottom',
+        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
+      )
+    }
+
+    $(document).on('sidebar.motion.complete', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+
+          toggleTOCOverflowIndicators();
+      });
+    }
+
+    function tocOverflowIndicator (indicator, action) {
+      var $indicator = $(indicator);
+      var opacity = action === 'show' ? 1 : 0;
+      $indicator.velocity ?
+        $indicator.velocity('stop').velocity({
+          opacity: opacity
+        }, { duration: 100 }) :
+        $indicator.stop().animate({
+          opacity: opacity
+        }, 100);
+    }
+
+  });
+</script>
+
+<script type="text/javascript" id="sidebar.nav">
+  $(document).ready(function () {
+    var html = $('html');
+    var TAB_ANIMATE_DURATION = 200;
+    var hasVelocity = $.isFunction(html.velocity);
+
+    $('.sidebar-nav li').on('click', function () {
+      var item = $(this);
+      var activeTabClassName = 'sidebar-nav-active';
+      var activePanelClassName = 'sidebar-panel-active';
+      if (item.hasClass(activeTabClassName)) {
+        return;
+      }
+
+      var currentTarget = $('.' + activePanelClassName);
+      var target = $('.' + item.data('target'));
+
+      hasVelocity ?
+        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
+            .addClass(activePanelClassName);
+        }) :
+        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
+          currentTarget.hide();
+          target
+            .stop()
+            .css({'opacity': 0, 'display': 'block'})
+            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
+              currentTarget.removeClass(activePanelClassName);
+              target.addClass(activePanelClassName);
+            });
+        });
+
+      item.siblings().removeClass(activeTabClassName);
+      item.addClass(activeTabClassName);
+    });
+
+    $('.post-toc a').on('click', function (e) {
+      e.preventDefault();
+      var targetSelector = NexT.utils.escapeSelector(this.getAttribute('href'));
+      var offset = $(targetSelector).offset().top;
+      hasVelocity ?
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        }) :
+        $('html, body').stop().animate({
+          scrollTop: offset
+        }, 500);
+    });
+
+    // Expand sidebar on post detail page by default, when post has a toc.
+    NexT.motion.middleWares.sidebar = function () {
+      var $tocContent = $('.post-toc-content');
+
+      if (CONFIG.scheme !== 'Pisces' && (CONFIG.sidebar.display === 'post' || CONFIG.sidebar.display === 'always')) {
+        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
+          NexT.utils.displaySidebar();
+        }
+      }
+    };
+  });
+</script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=0.5.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+  
+  
+  
+
+  
+
+
+</body>
+</html>
