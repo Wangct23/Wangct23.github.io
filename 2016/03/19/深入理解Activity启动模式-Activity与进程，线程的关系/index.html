@@ -75,7 +75,7 @@
 <meta property="og:image" content="http://7xrtw9.com1.z0.glb.clouddn.com/afterjump.png">
 <meta property="og:image" content="http://7xrtw9.com1.z0.glb.clouddn.com/singleInstance_bad.png">
 <meta property="og:image" content="http://7xrtw9.com1.z0.glb.clouddn.com/singleInstance_good.png">
-<meta property="og:updated_time" content="2016-03-19T02:33:44.838Z">
+<meta property="og:updated_time" content="2016-03-21T09:46:24.938Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="深入理解Activity启动模式">
 <meta name="twitter:description" content="概述Android官网介绍Activity的启动模式时比较含糊，介绍Application，Activity，Task，Process，Thread等概念以及它们之间的关系时，也没有说得清楚。大家看了Android官网对Activity启动模式的介绍后，可能会觉得很困惑。官网介绍singleTask启动模式时，说只要启动singleTask启动模式的Activity就会新建Task，但在实际操作中">
@@ -363,14 +363,12 @@
 <li>1)  如果A的启动模式为singleInstance，那么task1只能包含1个ActivityRecord，并且ActivityRecord对应的Activity必须是A  </li>
 <li>2)A的启动模式不是singleInstance，A的taskAffinity属性和task1的taskAffinity属性必须一样。Task的taskAffinity属性由它包含的第1个ActivityRecord的taskAffinity属性决定。</li>
 </ul>
-<p>####注意####</p>
-<ul>
+<h4 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h4><ul>
 <li>1)  从Launcher程序启动应用时，会先查找所有task，看是否有相关task，如果已有相关task，则会将相关task移动到回退栈的栈顶，然后显示栈顶Activity。查找相关task时，需看task是否和应用的入口Activity相关，入口Activity是指在AndroidManifest.xml里声明IntentFilter时，注明category为android.intent.category.LAUNCHER的Activity。如果入口Activity的启动模式为singleTask，不仅会将相关task移动到回退栈的栈顶，还会将该task里位于入口Activity之上的其它ActivityRecord全部清除掉  </li>
 <li>2)通过最近应用程序，切换应用时，会直接将应用图标对应的task移动到回退栈的栈顶，这样即使task里有singleTask类型的ActivityRecord，在它之上的ActivityRecord也不会被清除  </li>
 <li>3)  可以通过adb shell dumpsys activity activties查看系统task情况</li>
 </ul>
-<p>####思考问题####</p>
-<p>相信大家看了这篇博客以后，可以回答如下关于哪些情况下会产生新task的问题了</p>
+<h4 id="思考问题"><a href="#思考问题" class="headerlink" title="思考问题"></a>思考问题</h4><p>相信大家看了这篇博客以后，可以回答如下关于哪些情况下会产生新task的问题了</p>
 <ul>
 <li>1) 首次启动应用，是否会产生新的task?  </li>
 <li>2) 假设应用app1的入口Activity(Activity A)启动模式为standard,从A可跳转至Acitivity B，Activity B的启动模式为singleTask，那么启动应用后，从ActivityA跳转到ActivityB是否会产生新的task?  </li>
@@ -409,6 +407,10 @@
           </div>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/03/21/重构-读书笔记/" rel="prev" title="《重构 ： 改善既有代码的设计》--读书笔记">
+                《重构 ： 改善既有代码的设计》--读书笔记 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -476,7 +478,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">3</span>
+              <span class="site-state-item-count">6</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -486,7 +488,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">5</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -519,7 +521,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#概述"><span class="nav-number">1.</span> <span class="nav-text">概述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Application-Activity-Process-Thread之间的关系"><span class="nav-number">2.</span> <span class="nav-text">Application,Activity, Process,Thread之间的关系</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Activity-回退栈-Task之间的关系"><span class="nav-number">3.</span> <span class="nav-text">Activity,回退栈,Task之间的关系</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Activity-启动模式特点"><span class="nav-number">4.</span> <span class="nav-text">Activity 启动模式特点</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-standard模式"><span class="nav-number">4.1.</span> <span class="nav-text">1)  standard模式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-singleTop模式"><span class="nav-number">4.2.</span> <span class="nav-text">2)  singleTop模式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-singleTask模式"><span class="nav-number">4.3.</span> <span class="nav-text">3)  singleTask模式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-singleInstance模式"><span class="nav-number">4.4.</span> <span class="nav-text">4)  singleInstance模式</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#概述"><span class="nav-number">1.</span> <span class="nav-text">概述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Application-Activity-Process-Thread之间的关系"><span class="nav-number">2.</span> <span class="nav-text">Application,Activity, Process,Thread之间的关系</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Activity-回退栈-Task之间的关系"><span class="nav-number">3.</span> <span class="nav-text">Activity,回退栈,Task之间的关系</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Activity-启动模式特点"><span class="nav-number">4.</span> <span class="nav-text">Activity 启动模式特点</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-standard模式"><span class="nav-number">4.1.</span> <span class="nav-text">1)  standard模式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-singleTop模式"><span class="nav-number">4.2.</span> <span class="nav-text">2)  singleTop模式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-singleTask模式"><span class="nav-number">4.3.</span> <span class="nav-text">3)  singleTask模式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-singleInstance模式"><span class="nav-number">4.4.</span> <span class="nav-text">4)  singleInstance模式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#注意"><span class="nav-number">4.5.</span> <span class="nav-text">注意</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#思考问题"><span class="nav-number">4.6.</span> <span class="nav-text">思考问题</span></a></li></ol></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">

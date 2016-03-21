@@ -1,0 +1,805 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+
+
+
+
+  <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Sequence Diagram," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.5.0" />
+
+
+
+
+
+
+<meta name="description" content="这篇文章主要描述时序图的概念，知识。并用一个简单易懂的实例来帮助理解这些概念。相信读完这篇文章，以后再遇到时序图将不会感到陌生。
+时序图 : 显示对象之间的关系, 强调对象之间消息的时间顺序, 显示对象之间的交互;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="看懂时序图（Sequence Diagram）">
+<meta property="og:url" content="http://Wangct23.github.io/2016/03/21/时序图/index.html">
+<meta property="og:site_name" content="Alphabet">
+<meta property="og:description" content="这篇文章主要描述时序图的概念，知识。并用一个简单易懂的实例来帮助理解这些概念。相信读完这篇文章，以后再遇到时序图将不会感到陌生。
+时序图 : 显示对象之间的关系, 强调对象之间消息的时间顺序, 显示对象之间的交互;">
+<meta property="og:image" content="http://7xrtw9.com1.z0.glb.clouddn.com/SeqDiagram%2Fobject.png">
+<meta property="og:image" content="http://7xrtw9.com1.z0.glb.clouddn.com/SeqDiagram%2FLifeline.png">
+<meta property="og:image" content="http://7xrtw9.com1.z0.glb.clouddn.com/SeqDiagram%2FActivation.png">
+<meta property="og:image" content="http://7xrtw9.com1.z0.glb.clouddn.com/SeqDiagram%2Fmsg_type_01.png">
+<meta property="og:image" content="http://7xrtw9.com1.z0.glb.clouddn.com/SeqDiagram%2Fmsg_type_02.png">
+<meta property="og:image" content="http://7xrtw9.com1.z0.glb.clouddn.com/SeqDiagram%2Fmsg_type_03.png">
+<meta property="og:image" content="http://7xrtw9.com1.z0.glb.clouddn.com/SeqDiagram%2Fmsg_type_04.png">
+<meta property="og:image" content="http://7xrtw9.com1.z0.glb.clouddn.com/SeqDiagram%2Fmsg_type_05.png">
+<meta property="og:image" content="http://7xrtw9.com1.z0.glb.clouddn.com/SeqDiagram%2FSequenceDiagramInstance.png">
+<meta property="og:image" content="http://7xrtw9.com1.z0.glb.clouddn.com/SeqDiagram%2FCreateObj_01.png">
+<meta property="og:image" content="http://7xrtw9.com1.z0.glb.clouddn.com/SeqDiagram%2FCreateObj_02.png">
+<meta property="og:image" content="http://7xrtw9.com1.z0.glb.clouddn.com/SeqDiagram%2FCancelObj.png">
+<meta property="og:image" content="http://7xrtw9.com1.z0.glb.clouddn.com/SeqDiagram%2FCreateSequenceDiagram.png">
+<meta property="og:image" content="http://7xrtw9.com1.z0.glb.clouddn.com/SeqDiagram%2FAddObj.png">
+<meta property="og:image" content="http://7xrtw9.com1.z0.glb.clouddn.com/SeqDiagram%2FTwoObject.png">
+<meta property="og:image" content="http://7xrtw9.com1.z0.glb.clouddn.com/SeqDiagram%2FSetObjectPreference.png">
+<meta property="og:image" content="http://7xrtw9.com1.z0.glb.clouddn.com/SeqDiagram%2FAddMsg.png">
+<meta property="og:updated_time" content="2016-03-21T14:41:11.236Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="看懂时序图（Sequence Diagram）">
+<meta name="twitter:description" content="这篇文章主要描述时序图的概念，知识。并用一个简单易懂的实例来帮助理解这些概念。相信读完这篇文章，以后再遇到时序图将不会感到陌生。
+时序图 : 显示对象之间的关系, 强调对象之间消息的时间顺序, 显示对象之间的交互;">
+<meta name="twitter:image" content="http://7xrtw9.com1.z0.glb.clouddn.com/SeqDiagram%2Fobject.png">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"always"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
+  };
+</script>
+
+  <title> 看懂时序图（Sequence Diagram） | Alphabet </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Alphabet</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">A~Z</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-ategories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-question-circle fa-fw"></i> <br />
+            
+            menu.ategories
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    <!--render方法第二个参数is_index为是否为首页
+    #第三个参数is_pv为我们刚才设置的是否显示计数-->
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                看懂时序图（Sequence Diagram）
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-03-21T00:00:00+08:00" content="2016-03-21">
+              2016-03-21
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          <span>&nbsp; | &nbsp;
+          <span id="busuanzi_value_page_pv" ></span>次阅读
+          </span>    
+          
+
+          
+
+          
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>这篇文章主要描述时序图的概念，知识。并用一个简单易懂的实例来帮助理解这些概念。相信读完这篇文章，以后再遇到时序图将不会感到陌生。</p>
+<p><b>时序图</b> : 显示对象之间的关系, 强调对象之间消息的时间顺序, 显示对象之间的交互;</p>
+<a id="more"></a>
+<h4 id="时序图的概念"><a href="#时序图的概念" class="headerlink" title="时序图的概念"></a>时序图的概念</h4><ul>
+<li><p><em>时序图定义</em><br>描述了对象之间传递消息的时间顺序, 用来表示用例中的行为顺序, 是强调消息时间顺序的交互图;</p>
+</li>
+<li><p><em>时序图描述的事物</em><br>时序图描述系统中类和类之间的交互,将这些交互建模成消息交换，时序图描述了类以及类之间的交换以完成的期望行为的消息，时序图中每条消息都代表了类的一个操作 或者 引起状态机改变的触发事件;</p>
+</li>
+<li><p><em>时序图表示</em><br>参与交互的对象在时序图顶端水平排列, 每个对象的底端绘制了一条垂直虚线, 对象A像对象B发送消息, 用一条带箭头的实线表示, 该实线起始于对象A底部的虚线, 终止于对象B底部的虚线; 实线箭头水平放置, 越靠近顶端越早被发送.</p>
+</li>
+<li><p><em>时序图轨迹</em><br>时序图提供了随时间推移的, 清晰的 可视化的轨迹;</p>
+</li>
+</ul>
+<h4 id="时序图组成"><a href="#时序图组成" class="headerlink" title="时序图组成"></a>时序图组成</h4><p><b>时序图包括四个元素:</b><br><em>对象(Object)</em> | <em>生命线(Lifeline)</em> | <em>激活(Activation)</em> | <em>消息(Message)</em></p>
+<h5 id="1-对象-Object"><a href="#1-对象-Object" class="headerlink" title="(1) 对象(Object)"></a>(1) 对象(Object)</h5><p><img src="http://7xrtw9.com1.z0.glb.clouddn.com/SeqDiagram%2Fobject.png" alt="Object"></p>
+<p><em>对象 :</em> 时序图中的对象在交互中扮演的角色就是对象;</p>
+<p><em>对象的符号：</em> 时序图中的对象与对象图中的表示方法一样,使用矩形将对象名称包含起来, 并且对象名称下有下划线;</p>
+<p><em>对象创建时机 :</em> 对象可以在交互开始的时候创建, 也可以在交互过程中进行创建;</p>
+<ul>
+<li>处于顶部 : 如果对象的位置在时序图顶部, 说明在交互开始的时候对象就已经存在了; </li>
+<li>不在顶部 : 如果对象的位置不在顶部, 那么对象在交互过程中创建的;</li>
+</ul>
+<h5 id="2-生命线-Lifeline"><a href="#2-生命线-Lifeline" class="headerlink" title="(2) 生命线(Lifeline)"></a>(2) 生命线(Lifeline)</h5><p><img src="http://7xrtw9.com1.z0.glb.clouddn.com/SeqDiagram%2FLifeline.png" alt="Lifeline"></p>
+<p><em>生命线 :</em> 生命线是一条垂直的虚线, 这条虚线表示对象的存在, 在时序图中, 每个对象的底部都有生命线;</p>
+<p><em>生命线作用 :</em> 生命线是一个时间线, 从时序图顶部一直到底部都存在, 其长度取决于交互的时间;</p>
+<p><em>对象的生命线 :</em> 对象与生命线结合在一起就是对象的生命线, 这个概念包含对象图标 以及 对象下面的生命线图标 如上图;</p>
+<h5 id="3-激活-Activation"><a href="#3-激活-Activation" class="headerlink" title="(3) 激活(Activation)"></a>(3) 激活(Activation)</h5><p><img src="http://7xrtw9.com1.z0.glb.clouddn.com/SeqDiagram%2FActivation.png" alt="Activation"></p>
+<p><em>激活(Activation) :</em>代表时序图中对象执行一项操作的时期, 激活期可以理解为语义中 {} 中的内容, 表示该对象被占用以完成某个任务;</p>
+<p><em>去激活(Deactivation) :</em> 指对象处于空闲状态, 在等待消息激活这个对象;</p>
+<p><em>激活的表示 :</em> 当对象处于激活时期, 生命线可以拓宽为矩形, 这个矩形条成为激活条; </p>
+<p><em>激活去激活的时机 :</em> </p>
+<ul>
+<li>激活 : 对象激活是在激活条的顶部激活;</li>
+<li>去激活 : 激活条的底部去激活, 通常发生在一个消息离开对象生命线; </li>
+</ul>
+<h5 id="4-消息"><a href="#4-消息" class="headerlink" title="(4) 消息"></a>(4) 消息</h5><p><strong>消息概念 :</strong> 定义 <em>交互</em> 和 <em>协作</em> 中 交换信息 的类, 对 对象之间的 通信内容 建模;</p>
+<p><em>消息动作 :</em></p>
+<ul>
+<li>动作种类 : 消息允许在实体间传递信息 (传递参数), 允许实体请求其它服务, 对象之间通过 发送 和 接收 消息 进行通信; </li>
+<li>产生结果 : 消息可以触发操作, 唤起信号, 或使目标对象创建 或 销毁;</li>
+</ul>
+<p><em>消息的异步和同步通信 :</em></p>
+<ul>
+<li>异步通信 : 消息是信号的时候, 发送信号之后, 等待对方触发相应方法, 这是明确的 命名的 对象间的异步通信;</li>
+<li>同步通信 : 直接调用对象的方法, 执行方法返回结果, 这种具有返回控制机制的操作是同步通信;</li>
+</ul>
+<p><em>时序图和协作图中消息的区别 :</em></p>
+<ul>
+<li>时序图中的消息强调顺序;</li>
+<li>协作图中的消息强调交换消息的对象间的关系;</li>
+</ul>
+<p><em>消息类型 :</em></p>
+<ul>
+<li>两个对象间绘制消息<img src="http://7xrtw9.com1.z0.glb.clouddn.com/SeqDiagram%2Fmsg_type_01.png" alt="msg_type_01">  </li>
+<li>两个对象之间的过程调用<img src="http://7xrtw9.com1.z0.glb.clouddn.com/SeqDiagram%2Fmsg_type_02.png" alt="msg_type_02"></li>
+<li>两个对象之间的异步消息<img src="http://7xrtw9.com1.z0.glb.clouddn.com/SeqDiagram%2Fmsg_type_03.png" alt="msg_type_03"></li>
+<li>过程调用中返回的消息 <img src="http://7xrtw9.com1.z0.glb.clouddn.com/SeqDiagram%2Fmsg_type_04.png" alt="msg_type_04"></li>
+<li>绘制反身消息 <img src="http://7xrtw9.com1.z0.glb.clouddn.com/SeqDiagram%2Fmsg_type_05.png" alt="msg_type_05"></li>
+</ul>
+<h4 id="时序图示例"><a href="#时序图示例" class="headerlink" title="时序图示例"></a>时序图示例</h4><p>示例简介 :<br>– 使用场景 : 汽车租赁公司;<br>– 使用的对象 : Customer (客户), Worker (工作人员), Order (请求), Record (记录), Car (汽车);<br>– 工作流程 : ① 客户 向 工人 提出租车要求, ② 工人 检查 请求, ③ 客户 付款, ④ 工人 填写 记录, ⑤ 工人 取车;</p>
+<p>时序图 : </p>
+<p><img src="http://7xrtw9.com1.z0.glb.clouddn.com/SeqDiagram%2FSequenceDiagramInstance.png" alt="SequenceDiagramInstance"></p>
+<h4 id="对象的创建和撤销"><a href="#对象的创建和撤销" class="headerlink" title="对象的创建和撤销"></a>对象的创建和撤销</h4><p>对象位置 :<br>– 顶部 : 时序图中对象的默认位置是在时序图顶部, 这表明对象在交互开始之间就已经存在;<br>– 中间 : 如果对象在时序图中间部分, 说明对象时在交互过程中创建的;</p>
+<p>交互过程中创建对象的方法 :<br>– 消息指向对象 : 消息是构造方法, 箭头指向对象所代表的的矩形;<br><img src="http://7xrtw9.com1.z0.glb.clouddn.com/SeqDiagram%2FCreateObj_01.png" alt="CreateObj_01.png">  </p>
+<p>– 消息指向激活条 : 消息是构造方法, 箭头指向对象下面的激活条;<br><img src="http://7xrtw9.com1.z0.glb.clouddn.com/SeqDiagram%2FCreateObj_02.png" alt="CreateObj_02.png"></p>
+<p>撤销对象 : 如果想要在时序图中撤销一个对象, 因为如果同时有几个对象, 如果不进行特殊操作其生命周期将会一样长;<br>– 效果图 : 下图中将 Customer 和 Order 对象撤消了, 因为它们基本没有参与后期的交互;</p>
+<p><img src="http://7xrtw9.com1.z0.glb.clouddn.com/SeqDiagram%2FCancelObj.png" alt="CancelObj.png"></p>
+<h4 id="时序图建模技术"><a href="#时序图建模技术" class="headerlink" title="时序图建模技术"></a>时序图建模技术</h4><p>时序图使用时机 : 对动态行为建模, 强调时间展开信息的次序的时候, 使用时序图;</p>
+<p>时序图管理策略 :<br>– 单一控制流 : 一个单独的时序图只能显示一个控制流;<br>– 多个时序图 : 完整的控制流很复杂, 可以绘制多个时序图, 一个主干时序图, 多个分支时序图, 使用包对这些时序图进行管理;</p>
+<p>时序图建模策略 :<br>– 设置交互语境 : 交互所在的环境, 包括哪些对象, 属于什么系统, 子系统, 相关的操作 类 用例等;<br>– 对象排列顺序 : 根据对象重要性, 从左到右排列在时序图中;<br>– 对象生命线 : 对象通常存在于交互的整个过程, 也可以在交互过程中被创建和撤销;<br>– 消息排列 : 引发交互信息之后, 消息按照时间顺序从上向下画出, 先发出的消息 在 后发出的消息上面;<br>– 激活期设置 : 可以将实际操作发生的 时间点 消息 明确的显示出来;<br>– 时间空间约束 : 每个消息都可以附加合适的时间 和 空间约束;<br>– 前置后置条件 : 每条消息可以附加 前置 或 后置 条件;</p>
+<h4 id="Rational-Rose-时序图-操作"><a href="#Rational-Rose-时序图-操作" class="headerlink" title="Rational Rose 时序图 操作"></a>Rational Rose 时序图 操作</h4><p>(1) 创建时序图</p>
+<p>新建时序图 : 在 视图浏览器 中 右键点击 Logical View (逻辑视图), 选择 New(新建) -&gt; Sequence Diagram(时序图);<br><img src="http://7xrtw9.com1.z0.glb.clouddn.com/SeqDiagram%2FCreateSequenceDiagram.png" alt="CreateSequenceDiagram.png"></p>
+<p>(2) 添加对象</p>
+<p>添加对象 : 时序图中有两种对象, 一种是参与者Actor, 一种是普通的对象;<br>– 参与者对象 : 在类图中创建一个对象, 将其 Stereotype 修改为 Actor, 就变成了参与者, 然后在 视图浏览器中将这个元素拖到时序图中即可;<br><img src="http://7xrtw9.com1.z0.glb.clouddn.com/SeqDiagram%2FAddObj.png" alt="AddObj.png"></p>
+<p>– 普通对象 : 直接在 时序图中 点击  按钮, 在界面中创建对象;<br>– 两种对象效果 :<br><img src="http://7xrtw9.com1.z0.glb.clouddn.com/SeqDiagram%2FTwoObject.png" alt="TwoObject"></p>
+<p>设置对象属性 : 双击对象, 在弹出的 General 对话框中修改对象属性;<br>– Name : 对象名称, 不输入也可以;<br>– Document : 描述对象的文档;<br><img src="http://7xrtw9.com1.z0.glb.clouddn.com/SeqDiagram%2FSetObjectPreference.png" alt="SetObjectPreference.png"></p>
+<p>设置对象持续性 :<br>– 持续 (Persistent) : 对象保存在数据库 或 其它形式的永久存储体中;<br>– 静态 (Static) : 对象保存在内存中知道程序终止;<br>– 临时 (Transient) : 短时间内保存在内存中;</p>
+<p>(3) 添加消息</p>
+<p>消息作用 : 消息用两个对象生命线之间的箭头表示, 一个对象可以通过消息请求另一个对象执行某个操作;</p>
+<p>增加消息 :<br>– 发送消息 : 将  从发送消息对象的生命线 拖到 接收消息对象的生命线上;<br>– 显示取消编号和激活条 : 菜单栏 Tools -&gt; Options -&gt; Diagram 选项卡, Sequence numbering 是消消息编号 , Focus of control 显示激活条;<br><img src="http://7xrtw9.com1.z0.glb.clouddn.com/SeqDiagram%2FAddMsg.png" alt="AddMsg.png"></p>
+<hr>
+
+<blockquote>
+<p>本篇文章转载自：<a href="http://blog.csdn.net/shulianghan/article/details/17927131" target="_blank" rel="external">UML入门 之 交互图 – 时序图 协作图详解</a></p>
+</blockquote>
+
+      
+    </div>
+
+    <div>
+      
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Sequence-Diagram/" rel="tag">#Sequence Diagram</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/03/21/重构-读书笔记/" rel="next" title="《重构 ： 改善既有代码的设计》--读书笔记">
+                <i class="fa fa-chevron-left"></i> 《重构 ： 改善既有代码的设计》--读书笔记
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/03/21/看懂UML类图/" rel="prev" title="看懂UML类图">
+                看懂UML类图 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.jpg"
+               alt="wangct" />
+          <p class="site-author-name" itemprop="name">wangct</p>
+          <p class="site-description motion-element" itemprop="description">_blank</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">6</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+          
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc-indicator-top post-toc-indicator">
+            <i class="fa fa-angle-double-up"></i>
+          </div>
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#时序图的概念"><span class="nav-number">1.</span> <span class="nav-text">时序图的概念</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#时序图组成"><span class="nav-number">2.</span> <span class="nav-text">时序图组成</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1-对象-Object"><span class="nav-number">2.1.</span> <span class="nav-text">(1) 对象(Object)</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-生命线-Lifeline"><span class="nav-number">2.2.</span> <span class="nav-text">(2) 生命线(Lifeline)</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-激活-Activation"><span class="nav-number">2.3.</span> <span class="nav-text">(3) 激活(Activation)</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#4-消息"><span class="nav-number">2.4.</span> <span class="nav-text">(4) 消息</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#时序图示例"><span class="nav-number">3.</span> <span class="nav-text">时序图示例</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#对象的创建和撤销"><span class="nav-number">4.</span> <span class="nav-text">对象的创建和撤销</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#时序图建模技术"><span class="nav-number">5.</span> <span class="nav-text">时序图建模技术</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Rational-Rose-时序图-操作"><span class="nav-number">6.</span> <span class="nav-text">Rational Rose 时序图 操作</span></a></li></ol></div>
+            
+          </div>
+          <div class="post-toc-indicator-bottom post-toc-indicator">
+            <i class="fa fa-angle-double-down"></i>
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">wangct</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+本站总访问量 <span id="busuanzi_value_site_pv"></span> &nbsp&nbsp&nbsp
+您是第<span id="busuanzi_value_site_uv"></span>个来到的小伙伴
+
+
+
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+
+  
+
+
+
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=0.5.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=0.5.0"></script>
+
+
+
+  
+  
+
+  
+  
+<script type="text/javascript" src="/js/src/scrollspy.js?v=0.5.0"></script>
+
+<script type="text/javascript" id="sidebar.toc.highlight">
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+      toggleTOCOverflowIndicators();
+    }
+
+    function getTOCMaxHeight () {
+      var height = $('.sidebar').height() -
+                   $tocSelector.position().top -
+                   $('.post-toc-indicator-bottom').height();
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    function toggleTOCOverflowIndicators () {
+      tocOverflowIndicator(
+        '.post-toc-indicator-top',
+        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
+      );
+
+      tocOverflowIndicator(
+        '.post-toc-indicator-bottom',
+        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
+      )
+    }
+
+    $(document).on('sidebar.motion.complete', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+
+          toggleTOCOverflowIndicators();
+      });
+    }
+
+    function tocOverflowIndicator (indicator, action) {
+      var $indicator = $(indicator);
+      var opacity = action === 'show' ? 1 : 0;
+      $indicator.velocity ?
+        $indicator.velocity('stop').velocity({
+          opacity: opacity
+        }, { duration: 100 }) :
+        $indicator.stop().animate({
+          opacity: opacity
+        }, 100);
+    }
+
+  });
+</script>
+
+<script type="text/javascript" id="sidebar.nav">
+  $(document).ready(function () {
+    var html = $('html');
+    var TAB_ANIMATE_DURATION = 200;
+    var hasVelocity = $.isFunction(html.velocity);
+
+    $('.sidebar-nav li').on('click', function () {
+      var item = $(this);
+      var activeTabClassName = 'sidebar-nav-active';
+      var activePanelClassName = 'sidebar-panel-active';
+      if (item.hasClass(activeTabClassName)) {
+        return;
+      }
+
+      var currentTarget = $('.' + activePanelClassName);
+      var target = $('.' + item.data('target'));
+
+      hasVelocity ?
+        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
+            .addClass(activePanelClassName);
+        }) :
+        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
+          currentTarget.hide();
+          target
+            .stop()
+            .css({'opacity': 0, 'display': 'block'})
+            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
+              currentTarget.removeClass(activePanelClassName);
+              target.addClass(activePanelClassName);
+            });
+        });
+
+      item.siblings().removeClass(activeTabClassName);
+      item.addClass(activeTabClassName);
+    });
+
+    $('.post-toc a').on('click', function (e) {
+      e.preventDefault();
+      var targetSelector = NexT.utils.escapeSelector(this.getAttribute('href'));
+      var offset = $(targetSelector).offset().top;
+      hasVelocity ?
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        }) :
+        $('html, body').stop().animate({
+          scrollTop: offset
+        }, 500);
+    });
+
+    // Expand sidebar on post detail page by default, when post has a toc.
+    NexT.motion.middleWares.sidebar = function () {
+      var $tocContent = $('.post-toc-content');
+
+      if (CONFIG.scheme !== 'Pisces' && (CONFIG.sidebar.display === 'post' || CONFIG.sidebar.display === 'always')) {
+        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
+          NexT.utils.displaySidebar();
+        }
+      }
+    };
+  });
+</script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=0.5.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+  
+  
+  
+
+  
+
+
+</body>
+</html>

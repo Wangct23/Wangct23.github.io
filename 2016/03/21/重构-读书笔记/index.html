@@ -41,7 +41,7 @@
 <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Android, wangct23" />
+  <meta name="keywords" content="重构," />
 
 
 
@@ -57,25 +57,28 @@
 
 
 
-<meta name="description" content="纸上得来终觉浅，绝知此事要躬行！
-第一篇文档，没想好写什么。简单记录一下这次的历程。
-昨天晚上读了@StormZhang一篇的一篇博文《我为什么坚持写博客》，遂引发了我今天这一天的从早到晚的行动。
-1.先说说安装sublime + markdown吧    直到现在还不太清楚markdown到底是什么东东，只知道很火的样子，大家都在捧，作为跨行过来，初出江湖的小白，我觉得最明智的做法就是跟着主流走">
+<meta name="description" content="概述因为接下来的工作将会大量涉及到代码的重构，遂上网搜索重构的秘籍。发现了已经有业界神级大牛总结好了关于重构的方方面面，有个肩膀可以依靠，心里总算是有点着落了，而且还是大神的肩膀，对接下来的工作总算是有点底了。
+本篇文章的目的主要就在于摘录这本书的重要内容。一为加深学习印象；二为以后查看方便。
+首先，明确基本概念：
+什么是 重构 Refactoring？
+所谓重构是这样一个过程：「在不改变代码外在">
 <meta property="og:type" content="article">
-<meta property="og:title" content="搭建hexo + github + sublime + markdown博客系统成功！">
-<meta property="og:url" content="http://Wangct23.github.io/2016/03/13/hello-hexo/index.html">
+<meta property="og:title" content="《重构 ： 改善既有代码的设计》--读书笔记">
+<meta property="og:url" content="http://Wangct23.github.io/2016/03/21/重构-读书笔记/index.html">
 <meta property="og:site_name" content="Alphabet">
-<meta property="og:description" content="纸上得来终觉浅，绝知此事要躬行！
-第一篇文档，没想好写什么。简单记录一下这次的历程。
-昨天晚上读了@StormZhang一篇的一篇博文《我为什么坚持写博客》，遂引发了我今天这一天的从早到晚的行动。
-1.先说说安装sublime + markdown吧    直到现在还不太清楚markdown到底是什么东东，只知道很火的样子，大家都在捧，作为跨行过来，初出江湖的小白，我觉得最明智的做法就是跟着主流走">
-<meta property="og:updated_time" content="2016-03-13T12:21:03.381Z">
+<meta property="og:description" content="概述因为接下来的工作将会大量涉及到代码的重构，遂上网搜索重构的秘籍。发现了已经有业界神级大牛总结好了关于重构的方方面面，有个肩膀可以依靠，心里总算是有点着落了，而且还是大神的肩膀，对接下来的工作总算是有点底了。
+本篇文章的目的主要就在于摘录这本书的重要内容。一为加深学习印象；二为以后查看方便。
+首先，明确基本概念：
+什么是 重构 Refactoring？
+所谓重构是这样一个过程：「在不改变代码外在">
+<meta property="og:updated_time" content="2016-03-21T13:28:18.935Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="搭建hexo + github + sublime + markdown博客系统成功！">
-<meta name="twitter:description" content="纸上得来终觉浅，绝知此事要躬行！
-第一篇文档，没想好写什么。简单记录一下这次的历程。
-昨天晚上读了@StormZhang一篇的一篇博文《我为什么坚持写博客》，遂引发了我今天这一天的从早到晚的行动。
-1.先说说安装sublime + markdown吧    直到现在还不太清楚markdown到底是什么东东，只知道很火的样子，大家都在捧，作为跨行过来，初出江湖的小白，我觉得最明智的做法就是跟着主流走">
+<meta name="twitter:title" content="《重构 ： 改善既有代码的设计》--读书笔记">
+<meta name="twitter:description" content="概述因为接下来的工作将会大量涉及到代码的重构，遂上网搜索重构的秘籍。发现了已经有业界神级大牛总结好了关于重构的方方面面，有个肩膀可以依靠，心里总算是有点着落了，而且还是大神的肩膀，对接下来的工作总算是有点底了。
+本篇文章的目的主要就在于摘录这本书的重要内容。一为加深学习印象；二为以后查看方便。
+首先，明确基本概念：
+什么是 重构 Refactoring？
+所谓重构是这样一个过程：「在不改变代码外在">
 
 
 
@@ -93,7 +96,7 @@
   };
 </script>
 
-  <title> 搭建hexo + github + sublime + markdown博客系统成功！ | Alphabet </title>
+  <title> 《重构 ： 改善既有代码的设计》--读书笔记 | Alphabet </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -235,7 +238,7 @@
             
             
               
-                搭建hexo + github + sublime + markdown博客系统成功！
+                《重构 ： 改善既有代码的设计》--读书笔记
               
             
           </h1>
@@ -247,8 +250,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-03-13T19:34:00+08:00" content="2016-03-13">
-              2016-03-13
+            <time itemprop="dateCreated" datetime="2016-03-21T00:00:00+08:00" content="2016-03-21">
+              2016-03-21
             </time>
           </span>
 
@@ -280,12 +283,24 @@
       
 
       
-        <p>纸上得来终觉浅，绝知此事要躬行！</p>
-<p>第一篇文档，没想好写什么。简单记录一下这次的历程。</p>
-<p>昨天晚上读了@StormZhang一篇的一篇博文《我为什么坚持写博客》，遂引发了我今天这一天的从早到晚的行动。</p>
-<p>1.先说说安装sublime + markdown吧<br>    直到现在还不太清楚markdown到底是什么东东，只知道很火的样子，大家都在捧，作为跨行过来，初出江湖的小白，我觉得最明智的做法就是跟着主流走，即使遇到问题也容易找到解决办法。然而今天我遇到的第一个问题，在网上就没有搜索到解决方案。问题描述：安装sublime 3103版本，通过下载package control 包，更新后，无法下载插件！！！就这一个小小的问题，着实耽误了不少功夫，遍搜百度谷歌，发现似乎没有人遇到过这个问题。。。在山穷水尽，郁闷万分之际，突发奇想，用代码安装试试？结果，还真就好使了。原因是什么，俺也不想追究，我现在只想能用就行。后来想到，怪不得人家官方在同一个页面提供两种安装方式呢！可能就是因为确实存在我遇到的问题。。。</p>
-<p>2.搭建Hexo<br>    原本打算使用官方推荐的“github Pages + Jekyll” 组合神器，后来按照入门教程搞出个主页，之后就不知道该做什么了。连最基本的如何发布文章都摸不着头脑，后来不经意间看到了Hexo似乎也是不错的选择，据说对于像我现在这样的初级菜鸟还有在江湖行走多年的老鸟都挺适合。我只能说对于像我这种不愿意为难自己，不喜欢折腾的选手来说，在这个时候看到这篇文章真是太及时了。于是在网上找到了完整教程，写的非常好，过程很详细。如果能够把命令的含义解释一下就更好了。<br>    <a href="http://sunwhut.com/2015/10/30/buildBlog/?hmsr=toutiao.io&amp;utm_medium=toutiao.io&amp;utm_source=toutiao.io" target="_blank" rel="external">http://sunwhut.com/2015/10/30/buildBlog/?hmsr=toutiao.io&amp;utm_medium=toutiao.io&amp;utm_source=toutiao.io</a></p>
-<p>3.发布第一篇文章<br>    就是正在编辑的这篇文章了。不多说了，赶紧去发布嘚瑟一下，同时给自己一个赞！</p>
+        <h3 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h3><p>因为接下来的工作将会大量涉及到代码的重构，遂上网搜索重构的秘籍。发现了已经有业界神级大牛总结好了关于重构的方方面面，有个肩膀可以依靠，心里总算是有点着落了，而且还是大神的肩膀，对接下来的工作总算是有点底了。</p>
+<p>本篇文章的目的主要就在于摘录这本书的重要内容。<br>一为加深学习印象；<br>二为以后查看方便。</p>
+<p>首先，明确基本概念：</p>
+<p>什么是 <b>重构 Refactoring</b>？</p>
+<p>所谓重构是这样一个过程：<b>「在不改变代码外在行为的前提下，对代码做出修改，以改进程序的内部结构」。重构是一种有纪律的、经过训练的、有条不紊的程序整理方法，可以将整理过程中不小心引入错误的机率降到最低。本质上说，重构就是「在代码写好之后改进它的设计」。</b></p>
+<a id="more"></a>
+<hr>
+
+<h3 id="章节一-重构，第一个案例"><a href="#章节一-重构，第一个案例" class="headerlink" title="章节一 重构，第一个案例"></a>章节一 重构，第一个案例</h3><ul>
+<li><p>如果你发现自己需要为程序添加一个特性，而代码结构使你无法很方便地那么做，那就先重构那个程序，使特性的添加比较容易进行，然后再添加特性。</p>
+</li>
+<li><p>重构之前，首先检查自己是否有一套可靠的测试机制。这些测试必须有自我检验（self-checking）能力。</p>
+</li>
+<li><p>重构技术系以微小的步伐修改程序。如果你犯下错误，很容易便可发现它。</p>
+</li>
+<li><p>任何一个傻瓜都能写出计算机可以理解的代码。惟有写出人类容易理解的代码，才是优秀的程序员。</p>
+</li>
+</ul>
 
       
     </div>
@@ -298,17 +313,27 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/重构/" rel="tag">#重构</a>
+          
+        </div>
+      
 
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2016/03/19/深入理解Activity启动模式-Activity与进程，线程的关系/" rel="next" title="深入理解Activity启动模式">
+                <i class="fa fa-chevron-left"></i> 深入理解Activity启动模式
+              </a>
+            
           </div>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/03/14/网络资源收集/" rel="prev" title="网络资源收集">
-                网络资源收集 <i class="fa fa-chevron-right"></i>
+              <a href="/2016/03/21/时序图/" rel="prev" title="看懂时序图（Sequence Diagram）">
+                看懂时序图（Sequence Diagram） <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -420,7 +445,7 @@
               
             
             
-              <p class="post-toc-empty">此文章未包含目录</p>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#概述"><span class="nav-number">1.</span> <span class="nav-text">概述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#章节一-重构，第一个案例"><span class="nav-number">2.</span> <span class="nav-text">章节一 重构，第一个案例</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
