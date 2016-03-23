@@ -58,27 +58,36 @@
 
 
 <meta name="description" content="概述因为接下来的工作将会大量涉及到代码的重构，遂上网搜索重构的秘籍。发现了已经有业界神级大牛总结好了关于重构的方方面面，有个肩膀可以依靠，心里总算是有点着落了，而且还是大神的肩膀，对接下来的工作总算是有点底了。
-本篇文章的目的主要就在于摘录这本书的重要内容。一为加深学习印象；二为以后查看方便。
+本篇文章的目的主要就在于摘录这本书的重要内容。
+
+一为加深学习印象；
+二为以后查看方便。
+
 首先，明确基本概念：
-什么是 重构 Refactoring？
-所谓重构是这样一个过程：「在不改变代码外在">
+什么是  重构 Refactoring ？所谓重构是这样一个过程：「在不改">
 <meta property="og:type" content="article">
 <meta property="og:title" content="《重构 ： 改善既有代码的设计》--读书笔记">
 <meta property="og:url" content="http://Wangct23.github.io/2016/03/21/重构-读书笔记/index.html">
 <meta property="og:site_name" content="Alphabet">
 <meta property="og:description" content="概述因为接下来的工作将会大量涉及到代码的重构，遂上网搜索重构的秘籍。发现了已经有业界神级大牛总结好了关于重构的方方面面，有个肩膀可以依靠，心里总算是有点着落了，而且还是大神的肩膀，对接下来的工作总算是有点底了。
-本篇文章的目的主要就在于摘录这本书的重要内容。一为加深学习印象；二为以后查看方便。
+本篇文章的目的主要就在于摘录这本书的重要内容。
+
+一为加深学习印象；
+二为以后查看方便。
+
 首先，明确基本概念：
-什么是 重构 Refactoring？
-所谓重构是这样一个过程：「在不改变代码外在">
-<meta property="og:updated_time" content="2016-03-21T13:28:18.935Z">
+什么是  重构 Refactoring ？所谓重构是这样一个过程：「在不改">
+<meta property="og:updated_time" content="2016-03-23T12:33:58.819Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="《重构 ： 改善既有代码的设计》--读书笔记">
 <meta name="twitter:description" content="概述因为接下来的工作将会大量涉及到代码的重构，遂上网搜索重构的秘籍。发现了已经有业界神级大牛总结好了关于重构的方方面面，有个肩膀可以依靠，心里总算是有点着落了，而且还是大神的肩膀，对接下来的工作总算是有点底了。
-本篇文章的目的主要就在于摘录这本书的重要内容。一为加深学习印象；二为以后查看方便。
+本篇文章的目的主要就在于摘录这本书的重要内容。
+
+一为加深学习印象；
+二为以后查看方便。
+
 首先，明确基本概念：
-什么是 重构 Refactoring？
-所谓重构是这样一个过程：「在不改变代码外在">
+什么是  重构 Refactoring ？所谓重构是这样一个过程：「在不改">
 
 
 
@@ -284,23 +293,35 @@
 
       
         <h3 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h3><p>因为接下来的工作将会大量涉及到代码的重构，遂上网搜索重构的秘籍。发现了已经有业界神级大牛总结好了关于重构的方方面面，有个肩膀可以依靠，心里总算是有点着落了，而且还是大神的肩膀，对接下来的工作总算是有点底了。</p>
-<p>本篇文章的目的主要就在于摘录这本书的重要内容。<br>一为加深学习印象；<br>二为以后查看方便。</p>
+<p>本篇文章的目的主要就在于摘录这本书的重要内容。</p>
+<ul>
+<li>一为加深学习印象；</li>
+<li>二为以后查看方便。</li>
+</ul>
 <p>首先，明确基本概念：</p>
-<p>什么是 <b>重构 Refactoring</b>？</p>
-<p>所谓重构是这样一个过程：<b>「在不改变代码外在行为的前提下，对代码做出修改，以改进程序的内部结构」。重构是一种有纪律的、经过训练的、有条不紊的程序整理方法，可以将整理过程中不小心引入错误的机率降到最低。本质上说，重构就是「在代码写好之后改进它的设计」。</b></p>
+<p><center>什么是 <font color="blue"><strong> 重构 Refactoring </strong></font>？</center><br>所谓重构是这样一个过程：<strong>「在不改变代码外在行为的前提下，对代码做出修改，以改进程序的内部结构」。重构是一种有纪律的、经过训练的、有条不紊的程序整理方法，可以将整理过程中不小心引入错误的机率降到最低。本质上说，重构就是「在代码写好之后改进它的设计」。</strong></p>
 <a id="more"></a>
 <hr>
 
-<h3 id="章节一-重构，第一个案例"><a href="#章节一-重构，第一个案例" class="headerlink" title="章节一 重构，第一个案例"></a>章节一 重构，第一个案例</h3><ul>
-<li><p>如果你发现自己需要为程序添加一个特性，而代码结构使你无法很方便地那么做，那就先重构那个程序，使特性的添加比较容易进行，然后再添加特性。</p>
-</li>
-<li><p>重构之前，首先检查自己是否有一套可靠的测试机制。这些测试必须有自我检验（self-checking）能力。</p>
-</li>
-<li><p>重构技术系以微小的步伐修改程序。如果你犯下错误，很容易便可发现它。</p>
-</li>
-<li><p>任何一个傻瓜都能写出计算机可以理解的代码。惟有写出人类容易理解的代码，才是优秀的程序员。</p>
-</li>
-</ul>
+<h3 id="章节一-重构，第一个案例"><a href="#章节一-重构，第一个案例" class="headerlink" title="章节一 : 重构，第一个案例"></a>章节一 : 重构，第一个案例</h3><h4 id="起点"><a href="#起点" class="headerlink" title="起点"></a>起点</h4><blockquote>
+<p>如果你发现自己需要为程序添加一个特性，而代码结构使你无法很方便地那么做，那就先重构那个程序，使特性的添加比较容易进行，然后再添加特性。</p>
+</blockquote>
+<h4 id="重构的第一步"><a href="#重构的第一步" class="headerlink" title="重构的第一步"></a>重构的第一步</h4><blockquote>
+<p>1.重构之前，首先检查自己是否有一套可靠的测试机制。这些测试必须有自我检验（self-checking）能力。<br>    ————这是重构的第一步，非常关键，但是往往被忽略，而且被错认为没有必要。  </p>
+<p>2.重构技术系以微小的步伐修改程序。如果你犯下错误，很容易便可发现它。</p>
+</blockquote>
+<h4 id="分解和重组"><a href="#分解和重组" class="headerlink" title="分解和重组"></a>分解和重组</h4><blockquote>
+<p>原则：代码区块愈小，代码的功能就愈容易管理，代码的处理和搬移也都愈轻松。</p>
+</blockquote>
+<p>首先要把长长的函数切开，并把较小块的代码移至更合适的class内。<br>步骤（在每一个小步骤中都伴随着测试的执行）：  </p>
+<blockquote>
+<p><strong> <font color="orange">找出代码的逻辑泥团（logical clump）并运用 Extract Method </font> </strong><br>        <strong> <em>局部变量和参数</em> </strong><br>        得在代码里头找出函数内的局部变量（local variables）和参数（parameters）。<br>        任何不会被修改的变量都可以被我当成参数传入新的函数，至于会被修改的变量就需格外小心。<br>        如果只有一个变量会被修改，可以把它当作返回值。<br>        <strong> <em>修改变量名称</em> </strong><br>        好的代码应该清楚表达出自己的功能，变量名称是代码清晰的关键。<br>        <strong>   <em>为方法搬家</em> </strong><br>        函数应该放在它所使用的数据的所属object（或说class）内。运用Move Method。<br>        如果旧函数是一个public 函数，而又不想修改其他class 的接口也可以保留旧函数，让它调用新函数。<br>        <strong> <em>去除临时变量</em>  </strong><br>        临时变量可能是个问题: 它们只在自己所属的函数中有效，所以它们会助长「冗长而复杂」的函数。<br>        可以运用 Replace Temp with Query.</p>
+</blockquote>
+<p><strong> NOTE: <em>任何一个傻瓜都能写出计算机可以理解的代码。惟有写出人类容易理解的代码，才是优秀的程序员。</em> </strong></p>
+<h4 id="运用多态"><a href="#运用多态" class="headerlink" title="运用多态"></a>运用多态</h4><blockquote>
+<p>在另一个对象的属性（attribute）基础上运用switch 语句，并不是什么好主意。如果不得不使用，也应该在对象自己的数据上使用，而不是在别人的数据上使用。</p>
+</blockquote>
+<p>未完待续…</p>
 
       
     </div>
@@ -324,8 +345,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/03/19/深入理解Activity启动模式-Activity与进程，线程的关系/" rel="next" title="深入理解Activity启动模式">
-                <i class="fa fa-chevron-left"></i> 深入理解Activity启动模式
+              <a href="/2016/03/21/时序图/" rel="next" title="看懂时序图（Sequence Diagram）">
+                <i class="fa fa-chevron-left"></i> 看懂时序图（Sequence Diagram）
               </a>
             
           </div>
@@ -445,7 +466,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#概述"><span class="nav-number">1.</span> <span class="nav-text">概述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#章节一-重构，第一个案例"><span class="nav-number">2.</span> <span class="nav-text">章节一 重构，第一个案例</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#概述"><span class="nav-number">1.</span> <span class="nav-text">概述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#章节一-重构，第一个案例"><span class="nav-number">2.</span> <span class="nav-text">章节一 : 重构，第一个案例</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#起点"><span class="nav-number">2.1.</span> <span class="nav-text">起点</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#重构的第一步"><span class="nav-number">2.2.</span> <span class="nav-text">重构的第一步</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#分解和重组"><span class="nav-number">2.3.</span> <span class="nav-text">分解和重组</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#运用多态"><span class="nav-number">2.4.</span> <span class="nav-text">运用多态</span></a></li></ol></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
