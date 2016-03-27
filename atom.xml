@@ -1,0 +1,2560 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Alphabet</title>
+  <subtitle>A~Z</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://Wangct23.github.io/"/>
+  <updated>2016-03-27T02:37:15.686Z</updated>
+  <id>http://Wangct23.github.io/</id>
+  
+  <author>
+    <name>wangct</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="http://Wangct23.github.io/2016/03/27/%E7%BD%91%E7%BB%9C%E8%B5%84%E6%BA%90%E6%94%B6%E9%9B%86/"/>
+    <id>http://Wangct23.github.io/2016/03/27/网络资源收集/</id>
+    <published>2016-03-27T02:37:15.686Z</published>
+    <updated>2016-03-27T02:37:15.686Z</updated>
+    
+    <content type="html">&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;&lt;meta charset=&quot;utf-8&quot;&gt;&lt;meta name=&quot;date&quot; content=&quot;2016-03-14&quot;&gt;
+&lt;meta name=&quot;tags&quot; content=&quot;网络资源, blog, 博客, Android, Hexo&quot;&gt;&lt;style&gt;body {
+  width: 45em;
+  border: 1px solid #ddd;
+  outline: 1300px solid #fff;
+  margin: 16px auto;
+}
+
+body .markdown-body
+{
+  padding: 30px;
+}
+
+@font-face {
+  font-family: fontawesome-mini;
+  src: url(data:font/woff;charset=utf-8;base64,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) format(&#39;woff&#39;);
+}
+
+@font-face {
+  font-family: octicons-anchor;
+  src: url(data:font/woff;charset=utf-8;base64,d09GRgABAAAAAAYcAA0AAAAACjQAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABGRlRNAAABMAAAABwAAAAca8vGTk9TLzIAAAFMAAAARAAAAFZG1VHVY21hcAAAAZAAAAA+AAABQgAP9AdjdnQgAAAB0AAAAAQAAAAEACICiGdhc3AAAAHUAAAACAAAAAj//wADZ2x5ZgAAAdwAAADRAAABEKyikaNoZWFkAAACsAAAAC0AAAA2AtXoA2hoZWEAAALgAAAAHAAAACQHngNFaG10eAAAAvwAAAAQAAAAEAwAACJsb2NhAAADDAAAAAoAAAAKALIAVG1heHAAAAMYAAAAHwAAACABEAB2bmFtZQAAAzgAAALBAAAFu3I9x/Nwb3N0AAAF/AAAAB0AAAAvaoFvbwAAAAEAAAAAzBdyYwAAAADP2IQvAAAAAM/bz7t4nGNgZGFgnMDAysDB1Ml0hoGBoR9CM75mMGLkYGBgYmBlZsAKAtJcUxgcPsR8iGF2+O/AEMPsznAYKMwIkgMA5REMOXicY2BgYGaAYBkGRgYQsAHyGMF8FgYFIM0ChED+h5j//yEk/3KoSgZGNgYYk4GRCUgwMaACRoZhDwCs7QgGAAAAIgKIAAAAAf//AAJ4nHWMMQrCQBBF/0zWrCCIKUQsTDCL2EXMohYGSSmorScInsRGL2DOYJe0Ntp7BK+gJ1BxF1stZvjz/v8DRghQzEc4kIgKwiAppcA9LtzKLSkdNhKFY3HF4lK69ExKslx7Xa+vPRVS43G98vG1DnkDMIBUgFN0MDXflU8tbaZOUkXUH0+U27RoRpOIyCKjbMCVejwypzJJG4jIwb43rfl6wbwanocrJm9XFYfskuVC5K/TPyczNU7b84CXcbxks1Un6H6tLH9vf2LRnn8Ax7A5WQAAAHicY2BkYGAA4teL1+yI57f5ysDNwgAC529f0kOmWRiYVgEpDgYmEA8AUzEKsQAAAHicY2BkYGB2+O/AEMPCAAJAkpEBFbAAADgKAe0EAAAiAAAAAAQAAAAEAAAAAAAAKgAqACoAiAAAeJxjYGRgYGBhsGFgYgABEMkFhAwM/xn0QAIAD6YBhwB4nI1Ty07cMBS9QwKlQapQW3VXySvEqDCZGbGaHULiIQ1FKgjWMxknMfLEke2A+IJu+wntrt/QbVf9gG75jK577Lg8K1qQPCfnnnt8fX1NRC/pmjrk/zprC+8D7tBy9DHgBXoWfQ44Av8t4Bj4Z8CLtBL9CniJluPXASf0Lm4CXqFX8Q84dOLnMB17N4c7tBo1AS/Qi+hTwBH4rwHHwN8DXqQ30XXAS7QaLwSc0Gn8NuAVWou/gFmnjLrEaEh9GmDdDGgL3B4JsrRPDU2hTOiMSuJUIdKQQayiAth69r6akSSFqIJuA19TrzCIaY8sIoxyrNIrL//pw7A2iMygkX5vDj+G+kuoLdX4GlGK/8Lnlz6/h9MpmoO9rafrz7ILXEHHaAx95s9lsI7AHNMBWEZHULnfAXwG9/ZqdzLI08iuwRloXE8kfhXYAvE23+23DU3t626rbs8/8adv+9DWknsHp3E17oCf+Z48rvEQNZ78paYM38qfk3v/u3l3u3GXN2Dmvmvpf1Srwk3pB/VSsp512bA/GG5i2WJ7wu430yQ5K3nFGiOqgtmSB5pJVSizwaacmUZzZhXLlZTq8qGGFY2YcSkqbth6aW1tRmlaCFs2016m5qn36SbJrqosG4uMV4aP2PHBmB3tjtmgN2izkGQyLWprekbIntJFing32a5rKWCN/SdSoga45EJykyQ7asZvHQ8PTm6cslIpwyeyjbVltNikc2HTR7YKh9LBl9DADC0U/jLcBZDKrMhUBfQBvXRzLtFtjU9eNHKin0x5InTqb8lNpfKv1s1xHzTXRqgKzek/mb7nB8RZTCDhGEX3kK/8Q75AmUM/eLkfA+0Hi908Kx4eNsMgudg5GLdRD7a84npi+YxNr5i5KIbW5izXas7cHXIMAau1OueZhfj+cOcP3P8MNIWLyYOBuxL6DRylJ4cAAAB4nGNgYoAALjDJyIAOWMCiTIxMLDmZedkABtIBygAAAA==) format(&#39;woff&#39;);
+}
+
+.markdown-body {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #333333;
+  overflow: hidden;
+  font-family: &quot;Helvetica Neue&quot;, Helvetica, &quot;Segoe UI&quot;, Arial, freesans, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+.markdown-body a {
+  background: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline: 0;
+}
+
+.markdown-body b,
+.markdown-body strong {
+  font-weight: bold;
+}
+
+.markdown-body mark {
+  background: #ff0;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body sub,
+.markdown-body sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+.markdown-body sup {
+  top: -0.5em;
+}
+.markdown-body sub {
+  bottom: -0.25em;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.markdown-body img {
+  border: 0;
+}
+
+.markdown-body hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+.markdown-body pre {
+  overflow: auto;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.markdown-body input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body html input[disabled] {
+  cursor: default;
+}
+
+.markdown-body input {
+  line-height: normal;
+}
+
+.markdown-body input[type=&quot;checkbox&quot;] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body .codehilitetable {
+  border: 0;
+  border-spacing: 0;
+}
+
+.markdown-body .codehilitetable tr {
+  border: 0;
+}
+
+.markdown-body .codehilitetable pre,
+.markdown-body .codehilitetable div.codehilite {
+  margin: 0;
+}
+
+.markdown-body .linenos,
+.markdown-body .code,
+.markdown-body .codehilitetable td {
+  border: 0;
+  padding: 0;
+}
+
+.markdown-body td:not(.linenos) .linenodiv {
+  padding: 0 !important;
+}
+
+.markdown-body .code {
+  width: 100%;
+}
+
+.markdown-body .linenos div pre,
+.markdown-body .linenodiv pre,
+.markdown-body .linenodiv {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.markdown-body .code div pre,
+.markdown-body .code div {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  -moz-border-radius-bottomright: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.markdown-body * {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font: 13px Helvetica, arial, freesans, clean, sans-serif, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;;
+  line-height: 1.4;
+}
+
+.markdown-body a {
+  color: #4183c4;
+  text-decoration: none;
+}
+
+.markdown-body a:hover,
+.markdown-body a:focus,
+.markdown-body a:active {
+  text-decoration: underline;
+}
+
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.markdown-body hr:before,
+.markdown-body hr:after {
+  display: table;
+  content: &quot; &quot;;
+}
+
+.markdown-body hr:after {
+  clear: both;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+
+.markdown-body h1 {
+  font-size: 30px;
+}
+
+.markdown-body h2 {
+  font-size: 21px;
+}
+
+.markdown-body h3 {
+  font-size: 16px;
+}
+
+.markdown-body h4 {
+  font-size: 14px;
+}
+
+.markdown-body h5 {
+  font-size: 12px;
+}
+
+.markdown-body h6 {
+  font-size: 11px;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: Consolas, &quot;Liberation Mono&quot;, Menlo, Courier, monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body kbd {
+  background-color: #e7e7e7;
+  background-image: -moz-linear-gradient(#fefefe, #e7e7e7);
+  background-image: -webkit-linear-gradient(#fefefe, #e7e7e7);
+  background-image: linear-gradient(#fefefe, #e7e7e7);
+  background-repeat: repeat-x;
+  border-radius: 2px;
+  border: 1px solid #cfcfcf;
+  color: #000;
+  padding: 3px 5px;
+  line-height: 10px;
+  font: 11px Consolas, &quot;Liberation Mono&quot;, Menlo, Courier, monospace;
+  display: inline-block;
+}
+
+.markdown-body&gt;*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body&gt;*:last-child {
+  margin-bottom: 0 !important;
+}
+
+.markdown-body .headeranchor-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  padding-right: 6px;
+  padding-left: 30px;
+  margin-left: -30px;
+}
+
+.markdown-body .headeranchor-link:focus {
+  outline: none;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  position: relative;
+  margin-top: 1em;
+  margin-bottom: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.markdown-body h1 .headeranchor,
+.markdown-body h2 .headeranchor,
+.markdown-body h3 .headeranchor,
+.markdown-body h4 .headeranchor,
+.markdown-body h5 .headeranchor,
+.markdown-body h6 .headeranchor {
+  display: none;
+  color: #000;
+  vertical-align: middle;
+}
+
+.markdown-body h1:hover .headeranchor-link,
+.markdown-body h2:hover .headeranchor-link,
+.markdown-body h3:hover .headeranchor-link,
+.markdown-body h4:hover .headeranchor-link,
+.markdown-body h5:hover .headeranchor-link,
+.markdown-body h6:hover .headeranchor-link {
+  height: 1em;
+  padding-left: 8px;
+  margin-left: -30px;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .headeranchor-link .headeranchor,
+.markdown-body h2:hover .headeranchor-link .headeranchor,
+.markdown-body h3:hover .headeranchor-link .headeranchor,
+.markdown-body h4:hover .headeranchor-link .headeranchor,
+.markdown-body h5:hover .headeranchor-link .headeranchor,
+.markdown-body h6:hover .headeranchor-link .headeranchor {
+  display: inline-block;
+}
+
+.markdown-body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+
+.markdown-body h4 {
+  font-size: 1.25em;
+}
+
+.markdown-body h5 {
+  font-size: 1em;
+}
+
+.markdown-body h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre,
+.markdown-body .admonition {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 2em;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li&gt;p {
+  margin-top: 16px;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-body blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+
+.markdown-body blockquote&gt;:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote&gt;:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+
+.markdown-body table th {
+  font-weight: bold;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body code,
+.markdown-body samp {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+}
+
+.markdown-body code:before,
+.markdown-body code:after {
+  letter-spacing: -0.2em;
+  content: &quot;\00a0&quot;;
+}
+
+.markdown-body pre&gt;code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .codehilite {
+  margin-bottom: 16px;
+}
+
+.markdown-body .codehilite pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+
+.markdown-body .codehilite pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre code {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.markdown-body pre code:before,
+.markdown-body pre code:after {
+  content: normal;
+}
+
+/* Admonition */
+.markdown-body .admonition {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  position: relative;
+  border-radius: 3px;
+  border: 1px solid #e0e0e0;
+  border-left: 6px solid #333;
+  padding: 10px 10px 10px 30px;
+}
+
+.markdown-body .admonition table {
+  color: #333;
+}
+
+.markdown-body .admonition p {
+  padding: 0;
+}
+
+.markdown-body .admonition-title {
+  font-weight: bold;
+  margin: 0;
+}
+
+.markdown-body .admonition&gt;.admonition-title {
+  color: #333;
+}
+
+.markdown-body .attention&gt;.admonition-title {
+  color: #a6d796;
+}
+
+.markdown-body .caution&gt;.admonition-title {
+  color: #d7a796;
+}
+
+.markdown-body .hint&gt;.admonition-title {
+  color: #96c6d7;
+}
+
+.markdown-body .danger&gt;.admonition-title {
+  color: #c25f77;
+}
+
+.markdown-body .question&gt;.admonition-title {
+  color: #96a6d7;
+}
+
+.markdown-body .note&gt;.admonition-title {
+  color: #d7c896;
+}
+
+.markdown-body .admonition:before,
+.markdown-body .attention:before,
+.markdown-body .caution:before,
+.markdown-body .hint:before,
+.markdown-body .danger:before,
+.markdown-body .question:before,
+.markdown-body .note:before {
+  font: normal normal 16px fontawesome-mini;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  line-height: 1.5;
+  color: #333;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.markdown-body .admonition:before {
+  content: &quot;\f056\00a0&quot;;
+  color: 333;
+}
+
+.markdown-body .attention:before {
+  content: &quot;\f058\00a0&quot;;
+  color: #a6d796;
+}
+
+.markdown-body .caution:before {
+  content: &quot;\f06a\00a0&quot;;
+  color: #d7a796;
+}
+
+.markdown-body .hint:before {
+  content: &quot;\f05a\00a0&quot;;
+  color: #96c6d7;
+}
+
+.markdown-body .danger:before {
+  content: &quot;\f057\00a0&quot;;
+  color: #c25f77;
+}
+
+.markdown-body .question:before {
+  content: &quot;\f059\00a0&quot;;
+  color: #96a6d7;
+}
+
+.markdown-body .note:before {
+  content: &quot;\f040\00a0&quot;;
+  color: #d7c896;
+}
+
+.markdown-body .admonition::after {
+  content: normal;
+}
+
+.markdown-body .attention {
+  border-left: 6px solid #a6d796;
+}
+
+.markdown-body .caution {
+  border-left: 6px solid #d7a796;
+}
+
+.markdown-body .hint {
+  border-left: 6px solid #96c6d7;
+}
+
+.markdown-body .danger {
+  border-left: 6px solid #c25f77;
+}
+
+.markdown-body .question {
+  border-left: 6px solid #96a6d7;
+}
+
+.markdown-body .note {
+  border-left: 6px solid #d7c896;
+}
+
+.markdown-body .admonition&gt;*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body .admonition&gt;*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* progress bar*/
+.markdown-body .progress {
+  display: block;
+  width: 300px;
+  margin: 10px 0;
+  height: 24px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #ededed;
+  position: relative;
+  box-shadow: inset -1px 1px 3px rgba(0, 0, 0, .1);
+}
+
+.markdown-body .progress-label {
+  position: absolute;
+  text-align: center;
+  font-weight: bold;
+  width: 100%; margin: 0;
+  line-height: 24px;
+  color: #333;
+  text-shadow: 1px 1px 0 #fefefe, -1px -1px 0 #fefefe, -1px 1px 0 #fefefe, 1px -1px 0 #fefefe, 0 1px 0 #fefefe, 0 -1px 0 #fefefe, 1px 0 0 #fefefe, -1px 0 0 #fefefe, 1px 1px 2px #000;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.markdown-body .progress-bar {
+  height: 24px;
+  float: left;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #96c6d7;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .5), inset 0 -1px 0 rgba(0, 0, 0, .1);
+  background-size: 30px 30px;
+  background-image: -webkit-linear-gradient(
+    135deg, rgba(255, 255, 255, .4) 27%,
+    transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%,
+    transparent 77%, transparent
+  );
+  background-image: -moz-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -ms-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -o-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+}
+
+.markdown-body .progress-100plus .progress-bar {
+  background-color: #a6d796;
+}
+
+.markdown-body .progress-80plus .progress-bar {
+  background-color: #c6d796;
+}
+
+.markdown-body .progress-60plus .progress-bar {
+  background-color: #d7c896;
+}
+
+.markdown-body .progress-40plus .progress-bar {
+  background-color: #d7a796;
+}
+
+.markdown-body .progress-20plus .progress-bar {
+  background-color: #d796a6;
+}
+
+.markdown-body .progress-0plus .progress-bar {
+  background-color: #c25f77;
+}
+
+.markdown-body .candystripe-animate .progress-bar{
+  -webkit-animation: animate-stripes 3s linear infinite;
+  -moz-animation: animate-stripes 3s linear infinite;
+  animation: animate-stripes 3s linear infinite;
+}
+
+@-webkit-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@-moz-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+.markdown-body .gloss .progress-bar {
+  box-shadow:
+    inset 0 4px 12px rgba(255, 255, 255, .7),
+    inset 0 -12px 0 rgba(0, 0, 0, .05);
+}
+
+/* Multimarkdown Critic Blocks */
+.markdown-body .critic_mark {
+  background: #ff0;
+}
+
+.markdown-body .critic_delete {
+  color: #c82829;
+  text-decoration: line-through;
+}
+
+.markdown-body .critic_insert {
+  color: #718c00 ;
+  text-decoration: underline;
+}
+
+.markdown-body .critic_comment {
+  color: #8e908c;
+  font-style: italic;
+}
+
+.markdown-body .headeranchor {
+  font: normal normal 16px octicons-anchor;
+  line-height: 1;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.headeranchor:before {
+  content: &#39;\f05c&#39;;
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 4px 0.25em -20px;
+  vertical-align: middle;
+}
+
+/* Media */
+@media only screen and (min-width: 480px) {
+  .markdown-body {
+    font-size:14px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .markdown-body {
+    font-size:16px;
+  }
+}
+
+@media print {
+  .markdown-body * {
+    background: transparent !important;
+    color: black !important;
+    filter:none !important;
+    -ms-filter: none !important;
+  }
+
+  .markdown-body {
+    font-size:12pt;
+    max-width:100%;
+    outline:none;
+    border: 0;
+  }
+
+  .markdown-body a,
+  .markdown-body a:visited {
+    text-decoration: underline;
+  }
+
+  .markdown-body .headeranchor-link {
+    display: none;
+  }
+
+  .markdown-body a[href]:after {
+    content: &quot; (&quot; attr(href) &quot;)&quot;;
+  }
+
+  .markdown-body abbr[title]:after {
+    content: &quot; (&quot; attr(title) &quot;)&quot;;
+  }
+
+  .markdown-body .ir a:after,
+  .markdown-body a[href^=&quot;javascript:&quot;]:after,
+  .markdown-body a[href^=&quot;#&quot;]:after {
+    content: &quot;&quot;;
+  }
+
+  .markdown-body pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  .markdown-body pre,
+  .markdown-body blockquote {
+    border: 1px solid #999;
+    padding-right: 1em;
+    page-break-inside: avoid;
+  }
+
+  .markdown-body .progress,
+  .markdown-body .progress-bar {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .markdown-body .progress {
+    border: 1px solid #ddd;
+  }
+
+  .markdown-body .progress-bar {
+    height: 22px;
+    border-right: 1px solid #ddd;
+  }
+
+  .markdown-body tr,
+  .markdown-body img {
+    page-break-inside: avoid;
+  }
+
+  .markdown-body img {
+    max-width: 100% !important;
+  }
+
+  .markdown-body p,
+  .markdown-body h2,
+  .markdown-body h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  .markdown-body h2,
+  .markdown-body h3 {
+    page-break-after: avoid;
+  }
+}
+&lt;/style&gt;&lt;title&gt;网络资源收集&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;article class=&quot;markdown-body&quot;&gt;&lt;p&gt;这篇文章旨在收集个人觉得比较赞的一些网络资源，留作以后参考。这样可以免去重复搜索的麻烦，亦可以免去收藏夹的混乱，用一片文章列出来，一目了然。而且，走哪儿都可以访问。还可以自由的添加备注信息，还能不断地补充和修改。&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Android 开发&lt;br&gt;
+&lt;a href=&quot;http://developer.android.com/develop/index.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;官方API，你懂的&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;http://developer.android.com/develop/index.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://developer.android.com/develop/index.html&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;http://www.jikexueyuan.com/path/android/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;极客学院Android学习线路图&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;http://www.jikexueyuan.com/path/android/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.jikexueyuan.com/path/android/&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;http://www.devtf.cn/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;开发技术前线&lt;/a&gt; 高质量技术文章的聚合网站&lt;br&gt;
+&lt;a href=&quot;http://www.devtf.cn/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.devtf.cn/&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;http://www.cnblogs.com/meil/archive/2012/05/24/2516055.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;ADB调试，入门&lt;/a&gt;&lt;br&gt;
+    需要添加一个连接命令：adb connect [device IP]&lt;br&gt;
+&lt;a href=&quot;http://www.cnblogs.com/meil/archive/2012/05/24/2516055.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.cnblogs.com/meil/archive/2012/05/24/2516055.html&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;http://www.androidchina.net/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Android 开发中文站&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Github &amp;amp; Git&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;Hexo &lt;br&gt;
+&lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo官方&lt;/a&gt;链接，玩儿Hexo绝对值得收藏&lt;br&gt;
+&lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://hexo.io/&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;http://lovenight.github.io/2015/11/10/Hexo-3-1-1-%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8D%97/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;岁月如歌&lt;/a&gt;的博客：一篇关于Hexo搭建教程，还有些步骤（比如评论功能）没有完成，以后有需求要再次参考&lt;br&gt;
+&lt;a href=&quot;http://lovenight.github.io/2015/11/10/Hexo-3-1-1-%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8D%97/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://lovenight.github.io/2015/11/10/Hexo-3-1-1-%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8D%97/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Markdown&lt;br&gt;
+&lt;a href=&quot;http://www.jianshu.com/p/1e402922ee32/#&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Markdown入门指南&lt;/a&gt;，对于现在还不知道Markdown是什么东东的童鞋，有时间要看一下&lt;br&gt;
+&lt;a href=&quot;http://www.jianshu.com/p/1e402922ee32/#&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.jianshu.com/p/1e402922ee32/#&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;数据库&lt;br&gt;
+&lt;a href=&quot;http://www.sqlabs.com/sqlitemanager.php&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;SQLite Manager官网，图形化数据库查看&amp;amp;管理软件&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;http://www.sqlabs.com/sqlitemanager.php&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.sqlabs.com/sqlitemanager.php&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;JAVA&lt;br&gt;
+&lt;a href=&quot;http://www.hawstein.com/posts/google-java-style.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Google Java编程风格指南&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;http://www.hawstein.com/posts/google-java-style.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.hawstein.com/posts/google-java-style.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;&lt;/article&gt;&lt;/body&gt;&lt;/html&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;&lt;meta charset=&quot;utf-8&quot;&gt;&lt;meta name=&quot;date&quot; content=&quot;2016-03-14&quot;&gt;
+&lt;meta name=&quot;tags&quot; content=&quot;网络资源, blog, 博客, Android, Hexo&quot;&gt;&lt;style&gt;body {
+  width: 45em;
+  border: 1px solid #ddd;
+  outline: 1300px solid #fff;
+  margin: 16px auto;
+}
+
+body .markdown-body
+{
+  padding: 30px;
+}
+
+@font-face {
+  font-family: fontawesome-mini;
+  src: url(data:font/woff;charset=utf-8;base64,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) format(&#39;woff&#39;);
+}
+
+@font-face {
+  font-family: octicons-anchor;
+  src: url(data:font/woff;charset=utf-8;base64,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) format(&#39;woff&#39;);
+}
+
+.markdown-body {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #333333;
+  overflow: hidden;
+  font-family: &quot;Helvetica Neue&quot;, Helvetica, &quot;Segoe UI&quot;, Arial, freesans, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+.markdown-body a {
+  background: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline: 0;
+}
+
+.markdown-body b,
+.markdown-body strong {
+  font-weight: bold;
+}
+
+.markdown-body mark {
+  background: #ff0;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body sub,
+.markdown-body sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+.markdown-body sup {
+  top: -0.5em;
+}
+.markdown-body sub {
+  bottom: -0.25em;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.markdown-body img {
+  border: 0;
+}
+
+.markdown-body hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+.markdown-body pre {
+  overflow: auto;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.markdown-body input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body html input[disabled] {
+  cursor: default;
+}
+
+.markdown-body input {
+  line-height: normal;
+}
+
+.markdown-body input[type=&quot;checkbox&quot;] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body .codehilitetable {
+  border: 0;
+  border-spacing: 0;
+}
+
+.markdown-body .codehilitetable tr {
+  border: 0;
+}
+
+.markdown-body .codehilitetable pre,
+.markdown-body .codehilitetable div.codehilite {
+  margin: 0;
+}
+
+.markdown-body .linenos,
+.markdown-body .code,
+.markdown-body .codehilitetable td {
+  border: 0;
+  padding: 0;
+}
+
+.markdown-body td:not(.linenos) .linenodiv {
+  padding: 0 !important;
+}
+
+.markdown-body .code {
+  width: 100%;
+}
+
+.markdown-body .linenos div pre,
+.markdown-body .linenodiv pre,
+.markdown-body .linenodiv {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.markdown-body .code div pre,
+.markdown-body .code div {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  -moz-border-radius-bottomright: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.markdown-body * {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font: 13px Helvetica, arial, freesans, clean, sans-serif, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;;
+  line-height: 1.4;
+}
+
+.markdown-body a {
+  color: #4183c4;
+  text-decoration: none;
+}
+
+.markdown-body a:hover,
+.markdown-body a:focus,
+.markdown-body a:active {
+  text-decoration: underline;
+}
+
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.markdown-body hr:before,
+.markdown-body hr:after {
+  display: table;
+  content: &quot; &quot;;
+}
+
+.markdown-body hr:after {
+  clear: both;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+
+.markdown-body h1 {
+  font-size: 30px;
+}
+
+.markdown-body h2 {
+  font-size: 21px;
+}
+
+.markdown-body h3 {
+  font-size: 16px;
+}
+
+.markdown-body h4 {
+  font-size: 14px;
+}
+
+.markdown-body h5 {
+  font-size: 12px;
+}
+
+.markdown-body h6 {
+  font-size: 11px;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: Consolas, &quot;Liberation Mono&quot;, Menlo, Courier, monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body kbd {
+  background-color: #e7e7e7;
+  background-image: -moz-linear-gradient(#fefefe, #e7e7e7);
+  background-image: -webkit-linear-gradient(#fefefe, #e7e7e7);
+  background-image: linear-gradient(#fefefe, #e7e7e7);
+  background-repeat: repeat-x;
+  border-radius: 2px;
+  border: 1px solid #cfcfcf;
+  color: #000;
+  padding: 3px 5px;
+  line-height: 10px;
+  font: 11px Consolas, &quot;Liberation Mono&quot;, Menlo, Courier, monospace;
+  display: inline-block;
+}
+
+.markdown-body&gt;*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body&gt;*:last-child {
+  margin-bottom: 0 !important;
+}
+
+.markdown-body .headeranchor-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  padding-right: 6px;
+  padding-left: 30px;
+  margin-left: -30px;
+}
+
+.markdown-body .headeranchor-link:focus {
+  outline: none;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  position: relative;
+  margin-top: 1em;
+  margin-bottom: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.markdown-body h1 .headeranchor,
+.markdown-body h2 .headeranchor,
+.markdown-body h3 .headeranchor,
+.markdown-body h4 .headeranchor,
+.markdown-body h5 .headeranchor,
+.markdown-body h6 .headeranchor {
+  display: none;
+  color: #000;
+  vertical-align: middle;
+}
+
+.markdown-body h1:hover .headeranchor-link,
+.markdown-body h2:hover .headeranchor-link,
+.markdown-body h3:hover .headeranchor-link,
+.markdown-body h4:hover .headeranchor-link,
+.markdown-body h5:hover .headeranchor-link,
+.markdown-body h6:hover .headeranchor-link {
+  height: 1em;
+  padding-left: 8px;
+  margin-left: -30px;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .headeranchor-link .headeranchor,
+.markdown-body h2:hover .headeranchor-link .headeranchor,
+.markdown-body h3:hover .headeranchor-link .headeranchor,
+.markdown-body h4:hover .headeranchor-link .headeranchor,
+.markdown-body h5:hover .headeranchor-link .headeranchor,
+.markdown-body h6:hover .headeranchor-link .headeranchor {
+  display: inline-block;
+}
+
+.markdown-body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+
+.markdown-body h4 {
+  font-size: 1.25em;
+}
+
+.markdown-body h5 {
+  font-size: 1em;
+}
+
+.markdown-body h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre,
+.markdown-body .admonition {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 2em;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li&gt;p {
+  margin-top: 16px;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-body blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+
+.markdown-body blockquote&gt;:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote&gt;:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+
+.markdown-body table th {
+  font-weight: bold;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body code,
+.markdown-body samp {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+}
+
+.markdown-body code:before,
+.markdown-body code:after {
+  letter-spacing: -0.2em;
+  content: &quot;\00a0&quot;;
+}
+
+.markdown-body pre&gt;code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .codehilite {
+  margin-bottom: 16px;
+}
+
+.markdown-body .codehilite pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+
+.markdown-body .codehilite pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre code {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.markdown-body pre code:before,
+.markdown-body pre code:after {
+  content: normal;
+}
+
+/* Admonition */
+.markdown-body .admonition {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  position: relative;
+  border-radius: 3px;
+  border: 1px solid #e0e0e0;
+  border-left: 6px solid #333;
+  padding: 10px 10px 10px 30px;
+}
+
+.markdown-body .admonition table {
+  color: #333;
+}
+
+.markdown-body .admonition p {
+  padding: 0;
+}
+
+.markdown-body .admonition-title {
+  font-weight: bold;
+  margin: 0;
+}
+
+.markdown-body .admonition&gt;.admonition-title {
+  color: #333;
+}
+
+.markdown-body .attention&gt;.admonition-title {
+  color: #a6d796;
+}
+
+.markdown-body .caution&gt;.admonition-title {
+  color: #d7a796;
+}
+
+.markdown-body .hint&gt;.admonition-title {
+  color: #96c6d7;
+}
+
+.markdown-body .danger&gt;.admonition-title {
+  color: #c25f77;
+}
+
+.markdown-body .question&gt;.admonition-title {
+  color: #96a6d7;
+}
+
+.markdown-body .note&gt;.admonition-title {
+  color: #d7c896;
+}
+
+.markdown-body .admonition:before,
+.markdown-body .attention:before,
+.markdown-body .caution:before,
+.markdown-body .hint:before,
+.markdown-body .danger:before,
+.markdown-body .question:before,
+.markdown-body .note:before {
+  font: normal normal 16px fontawesome-mini;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  line-height: 1.5;
+  color: #333;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.markdown-body .admonition:before {
+  content: &quot;\f056\00a0&quot;;
+  color: 333;
+}
+
+.markdown-body .attention:before {
+  content: &quot;\f058\00a0&quot;;
+  color: #a6d796;
+}
+
+.markdown-body .caution:before {
+  content: &quot;\f06a\00a0&quot;;
+  color: #d7a796;
+}
+
+.markdown-body .hint:before {
+  content: &quot;\f05a\00a0&quot;;
+  color: #96c6d7;
+}
+
+.markdown-body .danger:before {
+  content: &quot;\f057\00a0&quot;;
+  color: #c25f77;
+}
+
+.markdown-body .question:before {
+  content: &quot;\f059\00a0&quot;;
+  color: #96a6d7;
+}
+
+.markdown-body .note:before {
+  content: &quot;\f040\00a0&quot;;
+  color: #d7c896;
+}
+
+.markdown-body .admonition::after {
+  content: normal;
+}
+
+.markdown-body .attention {
+  border-left: 6px solid #a6d796;
+}
+
+.markdown-body .caution {
+  border-left: 6px solid #d7a796;
+}
+
+.markdown-body .hint {
+  border-left: 6px solid #96c6d7;
+}
+
+.markdown-body .danger {
+  border-left: 6px solid #c25f77;
+}
+
+.markdown-body .question {
+  border-left: 6px solid #96a6d7;
+}
+
+.markdown-body .note {
+  border-left: 6px solid #d7c896;
+}
+
+.markdown-body .admonition&gt;*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body .admonition&gt;*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* progress bar*/
+.markdown-body .progress {
+  display: block;
+  width: 300px;
+  margin: 10px 0;
+  height: 24px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #ededed;
+  position: relative;
+  box-shadow: inset -1px 1px 3px rgba(0, 0, 0, .1);
+}
+
+.markdown-body .progress-label {
+  position: absolute;
+  text-align: center;
+  font-weight: bold;
+  width: 100%; margin: 0;
+  line-height: 24px;
+  color: #333;
+  text-shadow: 1px 1px 0 #fefefe, -1px -1px 0 #fefefe, -1px 1px 0 #fefefe, 1px -1px 0 #fefefe, 0 1px 0 #fefefe, 0 -1px 0 #fefefe, 1px 0 0 #fefefe, -1px 0 0 #fefefe, 1px 1px 2px #000;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.markdown-body .progress-bar {
+  height: 24px;
+  float: left;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #96c6d7;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .5), inset 0 -1px 0 rgba(0, 0, 0, .1);
+  background-size: 30px 30px;
+  background-image: -webkit-linear-gradient(
+    135deg, rgba(255, 255, 255, .4) 27%,
+    transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%,
+    transparent 77%, transparent
+  );
+  background-image: -moz-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -ms-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -o-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+}
+
+.markdown-body .progress-100plus .progress-bar {
+  background-color: #a6d796;
+}
+
+.markdown-body .progress-80plus .progress-bar {
+  background-color: #c6d796;
+}
+
+.markdown-body .progress-60plus .progress-bar {
+  background-color: #d7c896;
+}
+
+.markdown-body .progress-40plus .progress-bar {
+  background-color: #d7a796;
+}
+
+.markdown-body .progress-20plus .progress-bar {
+  background-color: #d796a6;
+}
+
+.markdown-body .progress-0plus .progress-bar {
+  background-color: #c25f77;
+}
+
+.markdown-body .candystripe-animate .progress-bar{
+  -webkit-animation: animate-stripes 3s linear infinite;
+  -moz-animation: animate-stripes 3s linear infinite;
+  animation: animate-stripes 3s linear infinite;
+}
+
+@-webkit-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@-moz-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+.markdown-body .gloss .progress-bar {
+  box-shadow:
+    inset 0 4px 12px rgba(255, 255, 255, .7),
+    inset 0 -12px 0 rgba(0, 0, 0, .05);
+}
+
+/* Multimarkdown Critic Blocks */
+.markdown-body .critic_mark {
+  background: #ff0;
+}
+
+.markdown-body .critic_delete {
+  color: #c82829;
+  text-decoration: line-through;
+}
+
+.markdown-body .critic_insert {
+  color: #718c00 ;
+  text-decoration: underline;
+}
+
+.markdown-body .critic_comment {
+  color: #8e908c;
+  font-style: italic;
+}
+
+.markdown-body .headeranchor {
+  font: normal normal 16px octicons-anchor;
+  line-height: 1;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.headeranchor:before {
+  content: &#39;\f05c&#39;;
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 4px 0.25em -20px;
+  vertical-align: middle;
+}
+
+/* Media */
+@media only screen and (min-width: 480px) {
+  .markdown-body {
+    font-size:14px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .markdown-body {
+    font-size:16px;
+  }
+}
+
+@media print {
+  .markdown-body * {
+    background: transparent !important;
+    color: black !important;
+    filter:none !important;
+    -ms-filter: none !important;
+  }
+
+  .markdown-body {
+    font-size:12pt;
+    max-width:100%;
+    outline:none;
+    border: 0;
+  }
+
+  .markdown-body a,
+  .markdown-body a:visited {
+    text-decoration: underline;
+  }
+
+  .markdown-body .headeranchor-link {
+    display: none;
+  }
+
+  .markdown-body a[href]:after {
+    content: &quot; (&quot; attr(href) &quot;)&quot;;
+  }
+
+  .markdown-body abbr[title]:after {
+    content: &quot; (&quot; attr(title) &quot;)&quot;;
+  }
+
+  .markdown-body .ir a:after,
+  .markdown-body a[href^=&quot;javascript:&quot;]:after,
+  .markdown-body a[href^=&quot;#&quot;]:after {
+    content: &quot;&quot;;
+  }
+
+  .markdown-body pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  .markdown-body pre,
+  .markdown-body blockquote {
+    border: 1px solid #999;
+    padding-right: 1em;
+    page-break-inside: avoid;
+  }
+
+  .markdown-body .progress,
+  .markdown-body .progress-bar {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .markdown-body .progress {
+    border: 1px solid #ddd;
+  }
+
+  .markdown-body .progress-bar {
+    height: 22px;
+    border-right: 1px solid #ddd;
+  }
+
+  .markdown-body tr,
+  .markdown-body img {
+    page-break-inside: avoid;
+  }
+
+  .markdown-body img {
+    max-width: 100% !important;
+  }
+
+  .markdown-body p,
+  .markdown-body h2,
+  .markdown-body h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  .markdown-body h2,
+  .markdown-body h3 {
+    page-break-after: avoid;
+  }
+}
+&lt;/style&gt;&lt;title&gt;网络资源收集&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;article class=&quot;markdown-body&quot;&gt;&lt;p&gt;这篇文章旨在收集个人觉得比较赞的一些网络资源，留作以后参考。这样可以免去重复搜索的麻烦，亦可以免去收藏夹的混乱，用一片文章列出来，一目了然。而且，走哪儿都可以访问。还可以自由的添加备注信息，还能不断地补充和修改。&lt;/p&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Java设计模式-回调函数和观察者模式</title>
+    <link href="http://Wangct23.github.io/2016/03/27/Java%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F-%E5%9B%9E%E8%B0%83%E5%87%BD%E6%95%B0%E5%92%8C%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F/"/>
+    <id>http://Wangct23.github.io/2016/03/27/Java设计模式-回调函数和观察者模式/</id>
+    <published>2016-03-26T16:00:00.000Z</published>
+    <updated>2016-03-27T05:34:03.496Z</updated>
+    
+    <content type="html">&lt;p&gt;一个经典例子让你彻彻底底理解java回调机制&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;p&gt;Android的框架中有非常多的地方使用了回调的模式，例如Activity的生命周期，按钮的点击事件等。&lt;/p&gt;
+&lt;h4 id=&quot;回调的基本模型：&quot;&gt;&lt;a href=&quot;#回调的基本模型：&quot; class=&quot;headerlink&quot; title=&quot;回调的基本模型：&quot;&gt;&lt;/a&gt;回调的基本模型：&lt;/h4&gt;&lt;figure class=&quot;highlight haxe&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;A&lt;/span&gt; &lt;/span&gt;&amp;#123;  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;private&lt;/span&gt; CallBack &lt;span class=&quot;keyword&quot;&gt;callback&lt;/span&gt;;  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;//注册一个事件  &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; void register(CallBack &lt;span class=&quot;keyword&quot;&gt;callback&lt;/span&gt;)&amp;#123;  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;this&lt;/span&gt;.&lt;span class=&quot;keyword&quot;&gt;callback&lt;/span&gt; = &lt;span class=&quot;keyword&quot;&gt;callback&lt;/span&gt;;  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;// 需要调用的时候回调  &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; void call()&amp;#123;  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;callback&lt;/span&gt;.oncall();  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight cs&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;interface&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;CallBack&lt;/span&gt; &amp;#123;  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;oncall&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;&lt;/span&gt;)&lt;/span&gt;;  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight aspectj&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(String[] args)&lt;/span&gt; &lt;/span&gt;&amp;#123;  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    A a = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; A();  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    a.register(&lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; CallBack() &amp;#123;  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;meta&quot;&gt;@Override&lt;/span&gt;  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;oncall&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt; &lt;/span&gt;&amp;#123;  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            System.out.println(&lt;span class=&quot;string&quot;&gt;&quot;回调函数被调用&quot;&lt;/span&gt;);  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;);  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    a.call();  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;如果把类A改成Button，CallBack改成OnClickListener，register函数改成setOnclickListener，和android里面设置点击事件是一样的。callback.oncall();只是在点击事件激发后调用而已。&lt;/p&gt;
+&lt;h4 id=&quot;观察者模式：&quot;&gt;&lt;a href=&quot;#观察者模式：&quot; class=&quot;headerlink&quot; title=&quot;观察者模式：&quot;&gt;&lt;/a&gt;观察者模式：&lt;/h4&gt;&lt;p&gt;&lt;em&gt;定义 :&lt;/em&gt;   &lt;strong&gt; 对象间的一对多的依赖关系，当一个对象状态发生改变时，所有依赖他的对象都得到通知并被自动更新。 &lt;/strong&gt;&lt;/p&gt;
+&lt;h5 id=&quot;目标：&quot;&gt;&lt;a href=&quot;#目标：&quot; class=&quot;headerlink&quot; title=&quot;目标：&quot;&gt;&lt;/a&gt;目标：&lt;/h5&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;Subject&lt;/span&gt; &lt;/span&gt;&amp;#123;  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    List&amp;lt;Observer&amp;gt; lists = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; ArrayList&amp;lt;Observer&amp;gt;();  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;//注册一个事件  &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;register&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(Observer observer)&lt;/span&gt;&lt;/span&gt;&amp;#123;  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        lists.add(observer);  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;_notify&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt;&lt;/span&gt;&amp;#123;  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; (Observer observer : lists) &amp;#123;  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            observer.update();  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;unRegister&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(Observer observer)&lt;/span&gt;&lt;/span&gt;&amp;#123;  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        lists.remove(observer);  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h5 id=&quot;观察者抽象接口&quot;&gt;&lt;a href=&quot;#观察者抽象接口&quot; class=&quot;headerlink&quot; title=&quot;观察者抽象接口&quot;&gt;&lt;/a&gt;观察者抽象接口&lt;/h5&gt;&lt;figure class=&quot;highlight cs&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;interface&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;Observer&lt;/span&gt; &amp;#123;  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;update&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;&lt;/span&gt;)&lt;/span&gt;;  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h5 id=&quot;观察者1&quot;&gt;&lt;a href=&quot;#观察者1&quot; class=&quot;headerlink&quot; title=&quot;观察者1&quot;&gt;&lt;/a&gt;观察者1&lt;/h5&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;ConcreteObserver1&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;implements&lt;/span&gt;  &lt;span class=&quot;title&quot;&gt;Observer&lt;/span&gt;&lt;/span&gt;&amp;#123;  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;update&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt; &lt;/span&gt;&amp;#123;  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        System.out.println(&lt;span class=&quot;string&quot;&gt;&quot;ConcreteObserver1获得更新&quot;&lt;/span&gt;);  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h5 id=&quot;观察者2&quot;&gt;&lt;a href=&quot;#观察者2&quot; class=&quot;headerlink&quot; title=&quot;观察者2&quot;&gt;&lt;/a&gt;观察者2&lt;/h5&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;ConcreteObserver2&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;implements&lt;/span&gt;  &lt;span class=&quot;title&quot;&gt;Observer&lt;/span&gt;&lt;/span&gt;&amp;#123;  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;update&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt; &lt;/span&gt;&amp;#123;  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        System.out.println(&lt;span class=&quot;string&quot;&gt;&quot;ConcreteObserver2获得更新&quot;&lt;/span&gt;);  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h5 id=&quot;主函数&quot;&gt;&lt;a href=&quot;#主函数&quot; class=&quot;headerlink&quot; title=&quot;主函数&quot;&gt;&lt;/a&gt;主函数&lt;/h5&gt;&lt;figure class=&quot;highlight cpp&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(String[] args)&lt;/span&gt; &lt;/span&gt;&amp;#123;  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    Observer observer1 = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; ConcreteObserver1();  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    Observer observer2 = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; ConcreteObserver2();  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    Subject subject = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; Subject();  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    subject.&lt;span class=&quot;keyword&quot;&gt;register&lt;/span&gt;(observer1);  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    subject.&lt;span class=&quot;keyword&quot;&gt;register&lt;/span&gt;(observer2);  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    subject._notify();  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;//取消观察者1的注册  &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    subject.unRegister(observer1);  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    subject._notify();  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;目标对象保存了各个观察者的引用，当需要通知时发送通知。&lt;/p&gt;
+&lt;p&gt;实际上，回调是观察者模式的简单形式。观察者模式也就是将回调上升到设计模式的理论高度上了而已。&lt;/p&gt;
+&lt;p&gt;将回调例子中的main方法改成&lt;br&gt;&lt;figure class=&quot;highlight delphi&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;static&lt;/span&gt; void main(&lt;span class=&quot;keyword&quot;&gt;String&lt;/span&gt;[] args) &lt;span class=&quot;comment&quot;&gt;&amp;#123;  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    CallBack callback = new CallBackImp();  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    A a = new A();  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    a.register(callback);  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    a.call();  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;增加CallBack的实现类CallBackImp&lt;/p&gt;
+&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;CallBackImp&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;implements&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;CallBack&lt;/span&gt;&lt;/span&gt;&amp;#123;  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;meta&quot;&gt;@Override&lt;/span&gt;  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;oncall&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt; &lt;/span&gt;&amp;#123;  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        System.out.println(&lt;span class=&quot;string&quot;&gt;&quot;回调函数被调用&quot;&lt;/span&gt;);  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;这样看来，是一致的，区别是观察者模式里面目标类维护了所有观察者的引用，而回调里面只是维护了一个引用。&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;一个经典例子让你彻彻底底理解java回调机制&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="回调函数， 观察者模式" scheme="http://Wangct23.github.io/tags/%E5%9B%9E%E8%B0%83%E5%87%BD%E6%95%B0%EF%BC%8C-%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>看懂时序图（Sequence Diagram）</title>
+    <link href="http://Wangct23.github.io/2016/03/21/%E6%97%B6%E5%BA%8F%E5%9B%BE/"/>
+    <id>http://Wangct23.github.io/2016/03/21/时序图/</id>
+    <published>2016-03-20T16:00:00.000Z</published>
+    <updated>2016-03-23T12:32:01.339Z</updated>
+    
+    <content type="html">&lt;p&gt;这篇文章主要描述时序图的概念，知识。并用一个简单易懂的实例来帮助理解这些概念。相信读完这篇文章，以后再遇到时序图将不会感到陌生。&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;时序图&lt;/b&gt; : 显示对象之间的关系, 强调对象之间消息的时间顺序, 显示对象之间的交互;&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h4 id=&quot;时序图的概念&quot;&gt;&lt;a href=&quot;#时序图的概念&quot; class=&quot;headerlink&quot; title=&quot;时序图的概念&quot;&gt;&lt;/a&gt;时序图的概念&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;em&gt;时序图定义&lt;/em&gt;&lt;br&gt;描述了对象之间传递消息的时间顺序, 用来表示用例中的行为顺序, 是强调消息时间顺序的交互图;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;em&gt;时序图描述的事物&lt;/em&gt;&lt;br&gt;时序图描述系统中类和类之间的交互,将这些交互建模成消息交换，时序图描述了类以及类之间的交换以完成的期望行为的消息，时序图中每条消息都代表了类的一个操作 或者 引起状态机改变的触发事件;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;em&gt;时序图表示&lt;/em&gt;&lt;br&gt;参与交互的对象在时序图顶端水平排列, 每个对象的底端绘制了一条垂直虚线, 对象A像对象B发送消息, 用一条带箭头的实线表示, 该实线起始于对象A底部的虚线, 终止于对象B底部的虚线; 实线箭头水平放置, 越靠近顶端越早被发送.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;em&gt;时序图轨迹&lt;/em&gt;&lt;br&gt;时序图提供了随时间推移的, 清晰的 可视化的轨迹;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;时序图组成&quot;&gt;&lt;a href=&quot;#时序图组成&quot; class=&quot;headerlink&quot; title=&quot;时序图组成&quot;&gt;&lt;/a&gt;时序图组成&lt;/h4&gt;&lt;p&gt;&lt;b&gt;时序图包括四个元素:&lt;/b&gt;&lt;br&gt;&lt;em&gt;对象(Object)&lt;/em&gt; | &lt;em&gt;生命线(Lifeline)&lt;/em&gt; | &lt;em&gt;激活(Activation)&lt;/em&gt; | &lt;em&gt;消息(Message)&lt;/em&gt;&lt;/p&gt;
+&lt;h5 id=&quot;1-对象-Object&quot;&gt;&lt;a href=&quot;#1-对象-Object&quot; class=&quot;headerlink&quot; title=&quot;(1) 对象(Object)&quot;&gt;&lt;/a&gt;(1) 对象(Object)&lt;/h5&gt;&lt;p&gt;&lt;img src=&quot;http://7xrtw9.com1.z0.glb.clouddn.com/SeqDiagram%2Fobject.png&quot; alt=&quot;Object&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;对象 :&lt;/em&gt; 时序图中的对象在交互中扮演的角色就是对象;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;对象的符号：&lt;/em&gt; 时序图中的对象与对象图中的表示方法一样,使用矩形将对象名称包含起来, 并且对象名称下有下划线;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;对象创建时机 :&lt;/em&gt; 对象可以在交互开始的时候创建, 也可以在交互过程中进行创建;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;处于顶部 : 如果对象的位置在时序图顶部, 说明在交互开始的时候对象就已经存在了; &lt;/li&gt;
+&lt;li&gt;不在顶部 : 如果对象的位置不在顶部, 那么对象在交互过程中创建的;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&quot;2-生命线-Lifeline&quot;&gt;&lt;a href=&quot;#2-生命线-Lifeline&quot; class=&quot;headerlink&quot; title=&quot;(2) 生命线(Lifeline)&quot;&gt;&lt;/a&gt;(2) 生命线(Lifeline)&lt;/h5&gt;&lt;p&gt;&lt;img src=&quot;http://7xrtw9.com1.z0.glb.clouddn.com/SeqDiagram%2FLifeline.png&quot; alt=&quot;Lifeline&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;生命线 :&lt;/em&gt; 生命线是一条垂直的虚线, 这条虚线表示对象的存在, 在时序图中, 每个对象的底部都有生命线;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;生命线作用 :&lt;/em&gt; 生命线是一个时间线, 从时序图顶部一直到底部都存在, 其长度取决于交互的时间;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;对象的生命线 :&lt;/em&gt; 对象与生命线结合在一起就是对象的生命线, 这个概念包含对象图标 以及 对象下面的生命线图标 如上图;&lt;/p&gt;
+&lt;h5 id=&quot;3-激活-Activation&quot;&gt;&lt;a href=&quot;#3-激活-Activation&quot; class=&quot;headerlink&quot; title=&quot;(3) 激活(Activation)&quot;&gt;&lt;/a&gt;(3) 激活(Activation)&lt;/h5&gt;&lt;p&gt;&lt;img src=&quot;http://7xrtw9.com1.z0.glb.clouddn.com/SeqDiagram%2FActivation.png&quot; alt=&quot;Activation&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;激活(Activation) :&lt;/em&gt;代表时序图中对象执行一项操作的时期, 激活期可以理解为语义中 {} 中的内容, 表示该对象被占用以完成某个任务;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;去激活(Deactivation) :&lt;/em&gt; 指对象处于空闲状态, 在等待消息激活这个对象;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;激活的表示 :&lt;/em&gt; 当对象处于激活时期, 生命线可以拓宽为矩形, 这个矩形条成为激活条; &lt;/p&gt;
+&lt;p&gt;&lt;em&gt;激活/去激活的时机 :&lt;/em&gt; &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;激活 : 对象激活是在激活条的顶部激活;&lt;/li&gt;
+&lt;li&gt;去激活 : 激活条的底部”去激活”, 通常发生在一个消息离开对象生命线; &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&quot;4-消息&quot;&gt;&lt;a href=&quot;#4-消息&quot; class=&quot;headerlink&quot; title=&quot;(4) 消息&quot;&gt;&lt;/a&gt;(4) 消息&lt;/h5&gt;&lt;p&gt;&lt;strong&gt;消息概念 :&lt;/strong&gt; 定义 &lt;em&gt;交互&lt;/em&gt; 和 &lt;em&gt;协作&lt;/em&gt; 中 交换信息 的类, 对 对象之间的 通信内容 建模;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;消息动作 :&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;动作种类 : 消息允许在实体间传递信息 (传递参数), 允许实体请求其它服务, 对象之间通过 发送 和 接收 消息 进行通信; &lt;/li&gt;
+&lt;li&gt;产生结果 : 消息可以触发操作, 唤起信号, 或使目标对象创建 或 销毁;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;消息的异步和同步通信 :&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;异步通信 : 消息是信号的时候, 发送信号之后, 等待对方触发相应方法, 这是明确的 命名的 对象间的异步通信;&lt;/li&gt;
+&lt;li&gt;同步通信 : 直接调用对象的方法, 执行方法返回结果, 这种具有返回控制机制的操作是同步通信;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;时序图和协作图中消息的区别 :&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;时序图中的消息强调顺序;&lt;/li&gt;
+&lt;li&gt;协作图中的消息强调交换消息的对象间的关系;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;消息类型 :&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;两个对象间绘制消息&lt;img src=&quot;http://7xrtw9.com1.z0.glb.clouddn.com/SeqDiagram%2Fmsg_type_01.png&quot; alt=&quot;msg_type_01&quot;&gt;  &lt;/li&gt;
+&lt;li&gt;两个对象之间的过程调用&lt;img src=&quot;http://7xrtw9.com1.z0.glb.clouddn.com/SeqDiagram%2Fmsg_type_02.png&quot; alt=&quot;msg_type_02&quot;&gt;&lt;/li&gt;
+&lt;li&gt;两个对象之间的异步消息&lt;img src=&quot;http://7xrtw9.com1.z0.glb.clouddn.com/SeqDiagram%2Fmsg_type_03.png&quot; alt=&quot;msg_type_03&quot;&gt;&lt;/li&gt;
+&lt;li&gt;过程调用中返回的消息 &lt;img src=&quot;http://7xrtw9.com1.z0.glb.clouddn.com/SeqDiagram%2Fmsg_type_04.png&quot; alt=&quot;msg_type_04&quot;&gt;&lt;/li&gt;
+&lt;li&gt;绘制反身消息 &lt;img src=&quot;http://7xrtw9.com1.z0.glb.clouddn.com/SeqDiagram%2Fmsg_type_05.png&quot; alt=&quot;msg_type_05&quot;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;时序图示例&quot;&gt;&lt;a href=&quot;#时序图示例&quot; class=&quot;headerlink&quot; title=&quot;时序图示例&quot;&gt;&lt;/a&gt;时序图示例&lt;/h4&gt;&lt;p&gt;示例简介 :&lt;br&gt;– 使用场景 : 汽车租赁公司;&lt;br&gt;– 使用的对象 : Customer (客户), Worker (工作人员), Order (请求), Record (记录), Car (汽车);&lt;br&gt;– 工作流程 : ① 客户 向 工人 提出租车要求, ② 工人 检查 请求, ③ 客户 付款, ④ 工人 填写 记录, ⑤ 工人 取车;&lt;/p&gt;
+&lt;p&gt;时序图 : &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://7xrtw9.com1.z0.glb.clouddn.com/SeqDiagram%2FSequenceDiagramInstance.png&quot; alt=&quot;SequenceDiagramInstance&quot;&gt;&lt;/p&gt;
+&lt;h4 id=&quot;对象的创建和撤销&quot;&gt;&lt;a href=&quot;#对象的创建和撤销&quot; class=&quot;headerlink&quot; title=&quot;对象的创建和撤销&quot;&gt;&lt;/a&gt;对象的创建和撤销&lt;/h4&gt;&lt;p&gt;对象位置 :&lt;br&gt;– 顶部 : 时序图中对象的默认位置是在时序图顶部, 这表明对象在交互开始之间就已经存在;&lt;br&gt;– 中间 : 如果对象在时序图中间部分, 说明对象时在交互过程中创建的;&lt;/p&gt;
+&lt;p&gt;交互过程中创建对象的方法 :&lt;br&gt;– 消息指向对象 : 消息是构造方法, 箭头指向对象所代表的的矩形;&lt;br&gt;&lt;img src=&quot;http://7xrtw9.com1.z0.glb.clouddn.com/SeqDiagram%2FCreateObj_01.png&quot; alt=&quot;CreateObj_01.png&quot;&gt;  &lt;/p&gt;
+&lt;p&gt;– 消息指向激活条 : 消息是构造方法, 箭头指向对象下面的激活条;&lt;br&gt;&lt;img src=&quot;http://7xrtw9.com1.z0.glb.clouddn.com/SeqDiagram%2FCreateObj_02.png&quot; alt=&quot;CreateObj_02.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;撤销对象 : 如果想要在时序图中撤销一个对象, 因为如果同时有几个对象, 如果不进行特殊操作其生命周期将会一样长;&lt;br&gt;– 效果图 : 下图中将 Customer 和 Order 对象撤消了, 因为它们基本没有参与后期的交互;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://7xrtw9.com1.z0.glb.clouddn.com/SeqDiagram%2FCancelObj.png&quot; alt=&quot;CancelObj.png&quot;&gt;&lt;/p&gt;
+&lt;h4 id=&quot;时序图建模技术&quot;&gt;&lt;a href=&quot;#时序图建模技术&quot; class=&quot;headerlink&quot; title=&quot;时序图建模技术&quot;&gt;&lt;/a&gt;时序图建模技术&lt;/h4&gt;&lt;p&gt;时序图使用时机 : 对动态行为建模, 强调时间展开信息的次序的时候, 使用时序图;&lt;/p&gt;
+&lt;p&gt;时序图管理策略 :&lt;br&gt;– 单一控制流 : 一个单独的时序图只能显示一个控制流;&lt;br&gt;– 多个时序图 : 完整的控制流很复杂, 可以绘制多个时序图, 一个主干时序图, 多个分支时序图, 使用包对这些时序图进行管理;&lt;/p&gt;
+&lt;p&gt;时序图建模策略 :&lt;br&gt;– 设置交互语境 : 交互所在的环境, 包括哪些对象, 属于什么系统, 子系统, 相关的操作 类 用例等;&lt;br&gt;– 对象排列顺序 : 根据对象重要性, 从左到右排列在时序图中;&lt;br&gt;– 对象生命线 : 对象通常存在于交互的整个过程, 也可以在交互过程中被创建和撤销;&lt;br&gt;– 消息排列 : 引发交互信息之后, 消息按照时间顺序从上向下画出, 先发出的消息 在 后发出的消息上面;&lt;br&gt;– 激活期设置 : 可以将实际操作发生的 时间点 消息 明确的显示出来;&lt;br&gt;– 时间空间约束 : 每个消息都可以附加合适的时间 和 空间约束;&lt;br&gt;– 前置后置条件 : 每条消息可以附加 前置 或 后置 条件;&lt;/p&gt;
+&lt;h4 id=&quot;Rational-Rose-时序图-操作&quot;&gt;&lt;a href=&quot;#Rational-Rose-时序图-操作&quot; class=&quot;headerlink&quot; title=&quot;Rational Rose 时序图 操作&quot;&gt;&lt;/a&gt;Rational Rose 时序图 操作&lt;/h4&gt;&lt;p&gt;(1) 创建时序图&lt;/p&gt;
+&lt;p&gt;新建时序图 : 在 视图浏览器 中 右键点击 Logical View (逻辑视图), 选择 New(新建) -&amp;gt; Sequence Diagram(时序图);&lt;br&gt;&lt;img src=&quot;http://7xrtw9.com1.z0.glb.clouddn.com/SeqDiagram%2FCreateSequenceDiagram.png&quot; alt=&quot;CreateSequenceDiagram.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;(2) 添加对象&lt;/p&gt;
+&lt;p&gt;添加对象 : 时序图中有两种对象, 一种是参与者Actor, 一种是普通的对象;&lt;br&gt;– 参与者对象 : 在类图中创建一个对象, 将其 Stereotype 修改为 Actor, 就变成了参与者, 然后在 视图浏览器中将这个元素拖到时序图中即可;&lt;br&gt;&lt;img src=&quot;http://7xrtw9.com1.z0.glb.clouddn.com/SeqDiagram%2FAddObj.png&quot; alt=&quot;AddObj.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;– 普通对象 : 直接在 时序图中 点击  按钮, 在界面中创建对象;&lt;br&gt;– 两种对象效果 :&lt;br&gt;&lt;img src=&quot;http://7xrtw9.com1.z0.glb.clouddn.com/SeqDiagram%2FTwoObject.png&quot; alt=&quot;TwoObject&quot;&gt;&lt;/p&gt;
+&lt;p&gt;设置对象属性 : 双击对象, 在弹出的 General 对话框中修改对象属性;&lt;br&gt;– Name : 对象名称, 不输入也可以;&lt;br&gt;– Document : 描述对象的文档;&lt;br&gt;&lt;img src=&quot;http://7xrtw9.com1.z0.glb.clouddn.com/SeqDiagram%2FSetObjectPreference.png&quot; alt=&quot;SetObjectPreference.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;设置对象持续性 :&lt;br&gt;– 持续 (Persistent) : 对象保存在数据库 或 其它形式的永久存储体中;&lt;br&gt;– 静态 (Static) : 对象保存在内存中知道程序终止;&lt;br&gt;– 临时 (Transient) : 短时间内保存在内存中;&lt;/p&gt;
+&lt;p&gt;(3) 添加消息&lt;/p&gt;
+&lt;p&gt;消息作用 : 消息用两个对象生命线之间的箭头表示, 一个对象可以通过消息请求另一个对象执行某个操作;&lt;/p&gt;
+&lt;p&gt;增加消息 :&lt;br&gt;– 发送消息 : 将  从发送消息对象的生命线 拖到 接收消息对象的生命线上;&lt;br&gt;– 显示取消编号和激活条 : 菜单栏 Tools -&amp;gt; Options -&amp;gt; Diagram 选项卡, Sequence numbering 是消消息编号 , Focus of control 显示激活条;&lt;br&gt;&lt;img src=&quot;http://7xrtw9.com1.z0.glb.clouddn.com/SeqDiagram%2FAddMsg.png&quot; alt=&quot;AddMsg.png&quot;&gt;&lt;/p&gt;
+&lt;hr&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;本篇文章转载自：&lt;a href=&quot;http://blog.csdn.net/shulianghan/article/details/17927131&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;UML入门 之 交互图 – 时序图 协作图详解&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;这篇文章主要描述时序图的概念，知识。并用一个简单易懂的实例来帮助理解这些概念。相信读完这篇文章，以后再遇到时序图将不会感到陌生。&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;时序图&lt;/b&gt; : 显示对象之间的关系, 强调对象之间消息的时间顺序, 显示对象之间的交互;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Sequence Diagram" scheme="http://Wangct23.github.io/tags/Sequence-Diagram/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>看懂UML类图</title>
+    <link href="http://Wangct23.github.io/2016/03/21/%E7%9C%8B%E6%87%82UML%E7%B1%BB%E5%9B%BE/"/>
+    <id>http://Wangct23.github.io/2016/03/21/看懂UML类图/</id>
+    <published>2016-03-20T16:00:00.000Z</published>
+    <updated>2016-03-23T08:03:33.286Z</updated>
+    
+    <content type="html">&lt;p&gt;这里不会将UML的各种元素都提到，我只想讲讲类图中各个类之间的关系； 能看懂类图中各个类之间的线条、箭头代表什么意思后，也就足够应对 日常的工作和交流； 同时，我们应该能将类图所表达的含义和最终的代码对应起来。&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;p&gt;本章所有图形使用Enterprise Architect 9.2来画,所有示例详见根目录下的design_patterns.EAP&lt;/p&gt;
+&lt;h3 id=&quot;从一个示例开始&quot;&gt;&lt;a href=&quot;#从一个示例开始&quot; class=&quot;headerlink&quot; title=&quot;从一个示例开始&quot;&gt;&lt;/a&gt;从一个示例开始&lt;/h3&gt;&lt;p&gt;请看以下这个类图，类之间的关系是我们需要关注的：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://7xrtw9.com1.z0.glb.clouddn.com/img%2Fumluml_class_struct.jpg&quot; alt=&quot;_images/uml_class_struct.jpg&quot;&gt;   &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;车的类图结构为&amp;lt;&lt;abstract&gt;&amp;gt;，表示车是一个抽象类；&lt;/abstract&gt;&lt;/li&gt;
+&lt;li&gt;它有两个继承类：小汽车和自行车；它们之间的关系为实现关系，使用带空心箭头的虚线表示；&lt;/li&gt;
+&lt;li&gt;小汽车为与SUV之间也是继承关系，它们之间的关系为泛化关系，使用带空心箭头的实线表示；&lt;/li&gt;
+&lt;li&gt;小汽车与发动机之间是组合关系，使用带实心箭头的实线表示；&lt;/li&gt;
+&lt;li&gt;学生与班级之间是聚合关系，使用带空心箭头的实线表示；&lt;/li&gt;
+&lt;li&gt;学生与身份证之间为关联关系，使用一根实线表示；&lt;/li&gt;
+&lt;li&gt;学生上学需要用到自行车，与自行车是一种依赖关系，使用带箭头的虚线表示；&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;font color=&quot;orange&quot; size=&quot;5sp&quot;&gt;&lt;b&gt;下面我们将介绍这六种关系；&lt;/b&gt;&lt;/font&gt; 
+
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;类之间的关系&quot;&gt;&lt;a href=&quot;#类之间的关系&quot; class=&quot;headerlink&quot; title=&quot;类之间的关系&quot;&gt;&lt;/a&gt;类之间的关系&lt;/h3&gt;&lt;h4 id=&quot;实现关系-realize&quot;&gt;&lt;a href=&quot;#实现关系-realize&quot; class=&quot;headerlink&quot; title=&quot;实现关系(realize)&quot;&gt;&lt;/a&gt;实现关系(realize)&lt;/h4&gt;&lt;p&gt;实现关系用一条带空心箭头的虚线表示，箭头从实现类指向接口。&lt;/p&gt;
+&lt;p&gt;eg：”车”为一个抽象概念，在现实中并无法直接用来定义对象；只有指明具体的子类(汽车还是自行车)，才可以用来定义对象（”车”这个类在C++中用抽象类表示，在JAVA中有接口这个概念，更容易理解）&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://7xrtw9.com1.z0.glb.clouddn.com/img%2Fumluml_realize.jpg&quot; alt=&quot;_images/uml_realize.jpg&quot;&gt;   &lt;/p&gt;
+&lt;p&gt;注：最终代码中，实现关系表现为继承抽象类；      &lt;br&gt;&lt;/p&gt;
+&lt;h4 id=&quot;泛化关系-generalization&quot;&gt;&lt;a href=&quot;#泛化关系-generalization&quot; class=&quot;headerlink&quot; title=&quot;泛化关系(generalization)&quot;&gt;&lt;/a&gt;泛化关系(generalization)&lt;/h4&gt;&lt;p&gt;类的继承结构表现在UML中为：泛化(generalize)与实现(realize)：&lt;/p&gt;
+&lt;p&gt;继承关系为 is-a的关系；两个对象之间如果可以用 is-a 来表示，就是继承关系：（..是..)&lt;/p&gt;
+&lt;!-- eg：自行车是车、猫是动物 --&gt;
+&lt;p&gt;泛化关系用一条带空心箭头的直线表示，箭头从子类指向父类。&lt;br&gt;如下图表示（A继承自B）；&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://7xrtw9.com1.z0.glb.clouddn.com/img%2Fumluml_generalization.jpg&quot; alt=&quot;_images/uml_generalization.jpg&quot;&gt;  &lt;/p&gt;
+&lt;p&gt;eg：汽车在现实中有实现，可用汽车定义具体的对象；汽车与SUV之间为泛化关系；&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://7xrtw9.com1.z0.glb.clouddn.com/img%2Fumluml_generalize.jpg&quot; alt=&quot;_images/uml_generalize.jpg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;注：最终代码中，泛化关系表现为继承非抽象类；&lt;/p&gt;
+&lt;h4 id=&quot;聚合关系-aggregation&quot;&gt;&lt;a href=&quot;#聚合关系-aggregation&quot; class=&quot;headerlink&quot; title=&quot;聚合关系(aggregation)&quot;&gt;&lt;/a&gt;聚合关系(aggregation)&lt;/h4&gt;&lt;p&gt;聚合关系用一条带空心菱形箭头的直线表示，如下图表示A聚合到B上，或者说B由A组成；&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://7xrtw9.com1.z0.glb.clouddn.com/img%2Fumluml_aggregation.jpg&quot; alt=&quot;_images/uml_aggregation.jpg&quot;&gt;   &lt;/p&gt;
+&lt;p&gt;聚合关系用于表示实体对象之间的关系，表示整体由部分构成的语义；例如一个部门由多个员工组成；&lt;/p&gt;
+&lt;p&gt;与组合关系不同的是，整体和部分不是强依赖的，即使整体不存在了，部分仍然存在；例如， 部门撤销了，人员不会消失，他们依然存在；&lt;/p&gt;
+&lt;h4 id=&quot;组合关系-composition&quot;&gt;&lt;a href=&quot;#组合关系-composition&quot; class=&quot;headerlink&quot; title=&quot;组合关系(composition)&quot;&gt;&lt;/a&gt;组合关系(composition)&lt;/h4&gt;&lt;p&gt;组合关系用一条带实心菱形箭头直线表示，如下图表示A组成B，或者B由A组成；&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://7xrtw9.com1.z0.glb.clouddn.com/img%2Fumluml_composition.jpg&quot; alt=&quot;_images/uml_composition.jpg&quot;&gt;   &lt;/p&gt;
+&lt;p&gt;与聚合关系一样，组合关系同样表示整体由部分构成的语义；比如公司由多个部门组成；&lt;/p&gt;
+&lt;p&gt;但组合关系是一种强依赖的特殊聚合关系，如果整体不存在了，则部分也不存在了；例如， 公司不存在了，部门也将不存在了；&lt;/p&gt;
+&lt;h4 id=&quot;关联关系-association&quot;&gt;&lt;a href=&quot;#关联关系-association&quot; class=&quot;headerlink&quot; title=&quot;关联关系(association)&quot;&gt;&lt;/a&gt;关联关系(association)&lt;/h4&gt;&lt;p&gt;关联关系是用一条直线表示的；它描述不同类的对象之间的结构关系；&lt;font color=&quot;orange&quot;&gt;&lt;strong&gt; 这种关系通常使用类的属性表达。&lt;/strong&gt;&lt;/font&gt;下图中，B类对象为A的一个属性。&lt;/p&gt;
+&lt;p&gt;它是一种静态关系， 通常与运行状态无关，一般由常识等因素决定的；它一般用来定义对象之间静态的、天然的结构； 所以，关联关系是一种“强关联”的关系；&lt;/p&gt;
+&lt;p&gt;比如，乘车人和车票之间就是一种关联关系；学生和学生证就是一种关联关系；客户类与订单类之间的关系。&lt;/p&gt;
+&lt;p&gt;关联关系默认不强调方向，表示对象间相互知道；如果特别强调方向，如下图，表示A知道B，但 B不知道A；&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://7xrtw9.com1.z0.glb.clouddn.com/img%2Fumluml_association.jpg&quot; alt=&quot;_images/uml_association.jpg&quot;&gt;   &lt;/p&gt;
+&lt;p&gt;注：在最终代码中，关联对象通常是以成员变量的形式实现的；&lt;/p&gt;
+&lt;h4 id=&quot;依赖关系-dependency&quot;&gt;&lt;a href=&quot;#依赖关系-dependency&quot; class=&quot;headerlink&quot; title=&quot;依赖关系(dependency)&quot;&gt;&lt;/a&gt;依赖关系(dependency)&lt;/h4&gt;&lt;p&gt;依赖关系是用一套带箭头的虚线表示的；如下图表示A依赖于B；他描述一个对象在运行期间会用到另一个对象的关系；&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://7xrtw9.com1.z0.glb.clouddn.com/img%2Fumluml_dependency.jpg&quot; alt=&quot;_images/uml_dependency.jpg&quot;&gt;   &lt;/p&gt;
+&lt;p&gt;与关联关系不同的是，它是一种临时性的关系，通常在运行期间产生，并且随着运行时的变化； 依赖关系也可能发生变化；&lt;/p&gt;
+&lt;p&gt;注：代码中一般指由局部变量、函数参数、返回值建立的对于其他对象的调用关系。一个类调用被依赖类中的某些方法而得以完成这个类的一些职责。在类图使用带箭头的虚线表示，箭头从使用类指向被依赖的类。  &lt;/p&gt;
+&lt;p&gt;显然，依赖也有方向，双向依赖是一种非常糟糕的结构，我们总是应该保持单向依赖，杜绝双向依赖的产生；&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h4 id=&quot;多重性（multiplicity）&quot;&gt;&lt;a href=&quot;#多重性（multiplicity）&quot; class=&quot;headerlink&quot; title=&quot;多重性（multiplicity）&quot;&gt;&lt;/a&gt;多重性（multiplicity）&lt;/h4&gt;&lt;p&gt;通常在关联、聚合、组合中使用。就是代表有多少个关联对象存在。使用&lt;font color=&quot;orange&quot;&gt;数字..星号 *（数字）&lt;/font&gt;&amp;gt;表示。 &lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;时序图（Sequence-Diagram）&quot;&gt;&lt;a href=&quot;#时序图（Sequence-Diagram）&quot; class=&quot;headerlink&quot; title=&quot;时序图（Sequence Diagram）&quot;&gt;&lt;/a&gt;时序图（Sequence Diagram）&lt;/h3&gt;&lt;p&gt;是显示对象之间交互的图，这些对象是按时间顺序排列的。时序图中显示的是参与交互的对象及其对象之间消息交互的顺序。&lt;/p&gt;
+&lt;p&gt;时序图包括的建模元素主要有：对象（Object）、生命线（Lifeline）、控制焦点（Focus of control）、消息（Message）等等。&lt;/p&gt;
+&lt;p&gt;关于时序图，以下这篇文章将概念介绍的比较详细: &lt;a href=&quot;http://wangct23.github.io/2016/03/21/%E6%97%B6%E5%BA%8F%E5%9B%BE/&quot;&gt;&lt;font size=&quot;5px&quot; color=&quot;blue&quot;&gt;看懂时序图&lt;/font&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;参考：&lt;br&gt;&lt;a href=&quot;http://design-patterns.readthedocs.org/zh_CN/latest/read_uml.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;看懂UML图&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://www.uml.org.cn/oobject/201104212.asp&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;UML类图与类的关系详解&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;这里不会将UML的各种元素都提到，我只想讲讲类图中各个类之间的关系； 能看懂类图中各个类之间的线条、箭头代表什么意思后，也就足够应对 日常的工作和交流； 同时，我们应该能将类图所表达的含义和最终的代码对应起来。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="UML" scheme="http://Wangct23.github.io/tags/UML/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>《重构 ： 改善既有代码的设计》--读书笔记</title>
+    <link href="http://Wangct23.github.io/2016/03/21/%E9%87%8D%E6%9E%84-%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    <id>http://Wangct23.github.io/2016/03/21/重构-读书笔记/</id>
+    <published>2016-03-20T16:00:00.000Z</published>
+    <updated>2016-03-23T12:51:49.174Z</updated>
+    
+    <content type="html">&lt;p&gt;因为接下来的工作将会大量涉及到代码的重构，遂上网搜索重构的秘籍。发现了已经有业界神级大牛总结好了关于重构的方方面面，有个肩膀可以依靠，心里总算是有点着落了，而且还是大神的肩膀，对接下来的工作总算是有点底了。&lt;/p&gt;
+&lt;p&gt;本篇文章的目的主要就在于摘录这本书的重要内容。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;一为加深学习印象；&lt;/li&gt;
+&lt;li&gt;二为以后查看方便。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;首先，明确基本概念：&lt;/p&gt;
+&lt;p&gt;&lt;center&gt;什么是 &lt;font color=&quot;blue&quot;&gt;&lt;strong&gt; 重构 Refactoring &lt;/strong&gt;&lt;/font&gt;？&lt;/center&gt;&lt;br&gt;所谓重构是这样一个过程：&lt;strong&gt;「在不改变代码外在行为的前提下，对代码做出修改，以改进程序的内部结构」。重构是一种有纪律的、经过训练的、有条不紊的程序整理方法，可以将整理过程中不小心引入错误的机率降到最低。本质上说，重构就是「在代码写好之后改进它的设计」。&lt;/strong&gt;&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;hr&gt;
+
+&lt;h3 id=&quot;章节一-重构，第一个案例&quot;&gt;&lt;a href=&quot;#章节一-重构，第一个案例&quot; class=&quot;headerlink&quot; title=&quot;章节一 : 重构，第一个案例&quot;&gt;&lt;/a&gt;章节一 : 重构，第一个案例&lt;/h3&gt;&lt;h4 id=&quot;起点&quot;&gt;&lt;a href=&quot;#起点&quot; class=&quot;headerlink&quot; title=&quot;起点&quot;&gt;&lt;/a&gt;起点&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;如果你发现自己需要为程序添加一个特性，而代码结构使你无法很方便地那么做，那就先重构那个程序，使特性的添加比较容易进行，然后再添加特性。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&quot;重构的第一步&quot;&gt;&lt;a href=&quot;#重构的第一步&quot; class=&quot;headerlink&quot; title=&quot;重构的第一步&quot;&gt;&lt;/a&gt;重构的第一步&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;1.重构之前，首先检查自己是否有一套可靠的测试机制。这些测试必须有自我检验（self-checking）能力。&lt;br&gt;    ————这是重构的第一步，非常关键，但是往往被忽略，而且被错认为没有必要。  &lt;/p&gt;
+&lt;p&gt;2.重构技术系以微小的步伐修改程序。如果你犯下错误，很容易便可发现它。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&quot;分解和重组&quot;&gt;&lt;a href=&quot;#分解和重组&quot; class=&quot;headerlink&quot; title=&quot;分解和重组&quot;&gt;&lt;/a&gt;分解和重组&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;原则：代码区块愈小，代码的功能就愈容易管理，代码的处理和搬移也都愈轻松。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;首先要把长长的函数切开，并把较小块的代码移至更合适的class内。&lt;br&gt;步骤（在每一个小步骤中都伴随着测试的执行）：  &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt; &lt;font color=&quot;orange&quot;&gt;找出代码的逻辑泥团（logical clump）并运用 Extract Method &lt;/font&gt; &lt;/strong&gt;&lt;br&gt;        &lt;strong&gt; &lt;em&gt;局部变量和参数&lt;/em&gt; &lt;/strong&gt;&lt;br&gt;        得在代码里头找出函数内的局部变量（local variables）和参数（parameters）。&lt;br&gt;        任何不会被修改的变量都可以被我当成参数传入新的函数，至于会被修改的变量就需格外小心。&lt;br&gt;        如果只有一个变量会被修改，可以把它当作返回值。&lt;br&gt;        &lt;strong&gt; &lt;em&gt;修改变量名称&lt;/em&gt; &lt;/strong&gt;&lt;br&gt;        好的代码应该清楚表达出自己的功能，变量名称是代码清晰的关键。&lt;br&gt;        &lt;strong&gt;   &lt;em&gt;为方法搬家&lt;/em&gt; &lt;/strong&gt;&lt;br&gt;        函数应该放在它所使用的数据的所属object（或说class）内。运用Move Method。&lt;br&gt;        如果旧函数是一个public 函数，而又不想修改其他class 的接口也可以保留旧函数，让它调用新函数。&lt;br&gt;        &lt;strong&gt; &lt;em&gt;去除临时变量&lt;/em&gt;  &lt;/strong&gt;&lt;br&gt;        临时变量可能是个问题: 它们只在自己所属的函数中有效，所以它们会助长「冗长而复杂」的函数。&lt;br&gt;        可以运用 Replace Temp with Query.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt; NOTE: &lt;em&gt;任何一个傻瓜都能写出计算机可以理解的代码。惟有写出人类容易理解的代码，才是优秀的程序员。&lt;/em&gt; &lt;/strong&gt;&lt;/p&gt;
+&lt;h4 id=&quot;运用多态&quot;&gt;&lt;a href=&quot;#运用多态&quot; class=&quot;headerlink&quot; title=&quot;运用多态&quot;&gt;&lt;/a&gt;运用多态&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;在另一个对象的属性（attribute）基础上运用switch 语句，并不是什么好主意。如果不得不使用，也应该在对象自己的数据上使用，而不是在别人的数据上使用。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;未完待续…&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;因为接下来的工作将会大量涉及到代码的重构，遂上网搜索重构的秘籍。发现了已经有业界神级大牛总结好了关于重构的方方面面，有个肩膀可以依靠，心里总算是有点着落了，而且还是大神的肩膀，对接下来的工作总算是有点底了。&lt;/p&gt;
+&lt;p&gt;本篇文章的目的主要就在于摘录这本书的重要内容。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;一为加深学习印象；&lt;/li&gt;
+&lt;li&gt;二为以后查看方便。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;首先，明确基本概念：&lt;/p&gt;
+&lt;p&gt;&lt;center&gt;什么是 &lt;font color=&quot;blue&quot;&gt;&lt;strong&gt; 重构 Refactoring &lt;/strong&gt;&lt;/font&gt;？&lt;/center&gt;&lt;br&gt;所谓重构是这样一个过程：&lt;strong&gt;「在不改变代码外在行为的前提下，对代码做出修改，以改进程序的内部结构」。重构是一种有纪律的、经过训练的、有条不紊的程序整理方法，可以将整理过程中不小心引入错误的机率降到最低。本质上说，重构就是「在代码写好之后改进它的设计」。&lt;/strong&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="重构" scheme="http://Wangct23.github.io/tags/%E9%87%8D%E6%9E%84/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>深入理解Activity启动模式</title>
+    <link href="http://Wangct23.github.io/2016/03/19/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3Activity%E5%90%AF%E5%8A%A8%E6%A8%A1%E5%BC%8F-Activity%E4%B8%8E%E8%BF%9B%E7%A8%8B%EF%BC%8C%E7%BA%BF%E7%A8%8B%E7%9A%84%E5%85%B3%E7%B3%BB/"/>
+    <id>http://Wangct23.github.io/2016/03/19/深入理解Activity启动模式-Activity与进程，线程的关系/</id>
+    <published>2016-03-18T16:00:00.000Z</published>
+    <updated>2016-03-21T09:46:24.938Z</updated>
+    
+    <content type="html">&lt;h3 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h3&gt;&lt;p&gt;Android官网介绍Activity的启动模式时比较含糊，介绍Application，Activity，Task，Process，Thread等概念以及它们之间的关系时，也没有说得清楚。大家看了Android官网对Activity启动模式的介绍后，可能会觉得很困惑。官网介绍singleTask启动模式时，说只要启动singleTask启动模式的Activity就会新建Task，但在实际操作中，如果同一个应用的两个Activity，如果其中一个Activity的启动模式为singleTask，一个Activity的启动模式为standard，从其中一个Activity跳转到另外一个Activity，并不会新建Task。&lt;/p&gt;
+&lt;p&gt;为了解除这些困惑，对Activity启动模式做了深入研究，因此写了这一系列博客，详细阐述Application，Activity，Task，Process，Thread等概念概念之间的关系，以及启动模式各自的特点，希望能对大家理解这些概念有所帮助。&lt;/p&gt;
+&lt;p&gt;本系列文章共分3部分:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;深入理解Activity启动模式(一)–Activity与进程，线程的关系&lt;/li&gt;
+&lt;li&gt;深入理解Activity启动模式(二)–Activity,回退栈,Task之间的关系&lt;/li&gt;
+&lt;li&gt;深入理解Activity启动模式(三)–Activity启动模式特点&lt;/li&gt;
+&lt;/ul&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h3 id=&quot;Application-Activity-Process-Thread之间的关系&quot;&gt;&lt;a href=&quot;#Application-Activity-Process-Thread之间的关系&quot; class=&quot;headerlink&quot; title=&quot;Application,Activity, Process,Thread之间的关系&quot;&gt;&lt;/a&gt;Application,Activity, Process,Thread之间的关系&lt;/h3&gt;&lt;p&gt;我们知道在AndroidManifest.xml里可声明Application，它可以由4大组件组成:Activity，Service，ContentProvider，BroadcastReceiver。声明Application时可以用android:name声明本应用使用的Application类，如果没有声明，则会直接使用Android框架的Application类建立实例对象。&lt;/p&gt;
+&lt;p&gt;应用第一次启动时，会启动一个新进程，该进程用应用的包名作为进程名。该进程会启动主线程ActivityThread，也叫做UI线程，UI的绘制都在该线程里完成。该进程里还有一些Binder服务线程，用于和系统进行通信。&lt;/p&gt;
+&lt;p&gt;另外，我们知道Activity跳转时，可以跨应用跳转，也就说应用app1里的Activity A可以跳转到应用app2里的Activity B。如果Activity A和Activity B的启动模式为standard模式，从A跳转到B后，Activity A和Activity B对应的ActivityRecord会放在同一个task里(ActivityRecord，Task都由系统进程管理，下一部分内容会介绍这些概念)，但是Acitivity A和Activity B的实例对象会放在不同的进程里。假设app1的包名为com.cloud.app1，app2的包名为com.cloud.app2，那么Activity A的实例对象位于进程com.cloud.app1里，Activity B的实例对象位于进程com.cloud.app2里。&lt;/p&gt;
+&lt;p&gt;也就是说，每个应用的组件都会运行在对应的应用进程里，该进程用应用的包名作为进程名。该进程里有一个主线程，也叫做UI线程，应用组件都运行在UI线程里。只有一种情况例外，如果声明组件时用android:process设置了进程名，该组件就会运行在一个新进程里，不是以应用的包名作为进程名，而是用包名+:+设置的值作为进程名&lt;/p&gt;
+&lt;p&gt;所以一般情况下service，receiver也会运行在ui线程里，如果在service，receiver的生命周期方法里做一些耗时的操作，系统会提示ANR(Activity Not Responde)错误。&lt;/p&gt;
+&lt;h3 id=&quot;Activity-回退栈-Task之间的关系&quot;&gt;&lt;a href=&quot;#Activity-回退栈-Task之间的关系&quot; class=&quot;headerlink&quot; title=&quot;Activity,回退栈,Task之间的关系&quot;&gt;&lt;/a&gt;Activity,回退栈,Task之间的关系&lt;/h3&gt;&lt;p&gt;Activity启动时ActivityManagerService会为其生成对应的ActivityRecord记录，并将其加入到回退栈(back stack)中，另外也会将ActivityRecord记录加入到某个Task中。请记住，ActivityRecord，backstack，Task都是ActivityManagerService的对象，由system_server进程负责维护，而不是由应用进程维护。&lt;/p&gt;
+&lt;p&gt;在回退栈里属于同一个task的ActivityRecord会放在一起，也会形成栈的结构，也就是说后启动的Activity对应的ActivityRecord会放在task的栈顶。&lt;/p&gt;
+&lt;p&gt;假设Activity的跳转顺序:A–&amp;gt;B–&amp;gt;C，A,B,C对应的ActivityRecord属于同一个Task，此时从C跳转至D，再跳转至E，C和D不属于同一个Task，D和E属于同一个Task，那现在的back stack结构如下所示:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://7xrtw9.com1.z0.glb.clouddn.com/backstack_base.jpg&quot; alt=&quot;backstack_base&quot;&gt;&lt;/p&gt;
+&lt;p&gt;现在A,B,C属于task1,C在task1的栈顶，D,E属于task2，E在task2的栈顶。也可以看出来task2位于整个回退栈的栈顶，也就是说task2在task1的上面。如果此时不断按回退键，看到的Activity的顺序会是E–&amp;gt;D–&amp;gt;C–&amp;gt;B–&amp;gt;A。&lt;/p&gt;
+&lt;p&gt;另外需注意，ActivityManagerService不仅会往回退栈里添加新的ActivityRecord，还会移动回退栈里的ActivityRecord，移动时以task为单位进行移动，而不会移动单个AcitivityRecord。还是针对上面的例子，假设此时按了Home键，那么会将Home应用程序(也叫做Launcher应用程序)的task移动至栈顶，那么此时回退栈如下所示:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://7xrtw9.com1.z0.glb.clouddn.com/backstack_H.jpg&quot; alt=&quot;backstack_H&quot;&gt;&lt;/p&gt;
+&lt;p&gt;可以看到Home应用程序的Activity H对应的Activity Record移动到了回退栈的栈顶。Home应用程序的Activity H对回退按键的响应做了特殊处理，如果此时按回退键，是看不到Activity E的。&lt;/p&gt;
+&lt;p&gt;如果此时通过Launcher程序再打开Activity A所在的应用，那么会显示Activity C，因为会将Activity A对应的Activity Record所在的task移动至回退栈的栈顶，此时回退栈如下所示:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://7xrtw9.com1.z0.glb.clouddn.com/backstack_move.jpg&quot; alt=&quot;backstack_move&quot;&gt;&lt;/p&gt;
+&lt;p&gt;现在task1移动到了栈顶，Home应用程序的task位于task1的下面，而task2位于Home应用程序的task之下，此时如果按返回键，那么Activity的显示顺序是:C–&amp;gt;B–&amp;gt;A–&amp;gt;H，不会显示E。&lt;/p&gt;
+&lt;p&gt;当然我们也可以在Launcher应用程序里打开D所在的应用，这样会将D,E所在的task2移动至栈顶。&lt;/p&gt;
+&lt;p&gt;现在应该对task有所理解了，task其实是由ActivityRecord组成的栈，多个task以栈的形式组成了回退栈，ActivityManagerService移动回退栈里的ActivityRecord时以task为单位移动。&lt;/p&gt;
+&lt;p&gt;我们知道跨应用跳转Activity时，两个Activity对应的ActivityRecord可属于同一个task，那什么情况下两个ActivityRecord会属于不同的task呢?或者说，Activity跳转时，什么情况下会产生新的task呢？&lt;/p&gt;
+&lt;p&gt;这个问题和Activity的启动模式，taskAffinity，启动Activity时为Intent设置的flag等因素相关。&lt;/p&gt;
+&lt;p&gt;先说一下taskAffinity，每个Activity的taskAffinity属性值默认为包名，也就是说如果Activity A所在的应用的包名为com.cloud.app1，那么Activity A的taskAffinity属性值为com.cloud.app1，我们可以在AndroidManifest.xml里通过android:taskAffinity属性为Activity设置特殊的taskAffinity，假设我们在AndroidManifest.xml里为Activity A设置了android:taskAffinity=”:test”，那么Activity A的taskAffinity值为com.cloud.app1:test。&lt;/p&gt;
+&lt;p&gt;那么我现在可以明白:不同应用的Activity的taskAffinity属性值会不一样。&lt;/p&gt;
+&lt;p&gt;假设Activity A和Activity B的启动模式都是standard，二者taskAffinity属性值不一样，从Activity A跳转至Activity B，那么它们对应的ActivityRecord会属于同一个task。&lt;/p&gt;
+&lt;p&gt;假设Activity A的启动模式是standard，Activity B的启动模式singleTask，二者taskAffinity属性值一样，此时从Activity A跳转至Activity B，那么它们对应的ActivityRecord会属于同一个task。因为只要两个Activity的taskAffinity属性一致，即使其中有一个Activity的启动模式为singleTask，它们对应的ActivityRecord会放在同一个task里，不管是从某个Activity跳转到singleTask类型的Activity，还是从singleTask类型的Activity跳转到其他Activity都是如此，除非跳转的其他Activity的启动模式是singleInstance。这里的描述和官方文档很不一样，稍后会为大家介绍singleTask启动模式的特点。&lt;/p&gt;
+&lt;p&gt;假设Activity A的启动模式是standard，Activity B的启动模式singleTask，二者taskAffinity属性值不 一样，此时从Activity A跳转至Activity B，那么它们对应的ActivityRecord会属于不同的Task。&lt;/p&gt;
+&lt;p&gt;还有其他很多情况会产生新的task，大家可以看接下来关于启动模式的特点的介绍。&lt;/p&gt;
+&lt;h3 id=&quot;Activity-启动模式特点&quot;&gt;&lt;a href=&quot;#Activity-启动模式特点&quot; class=&quot;headerlink&quot; title=&quot;Activity 启动模式特点&quot;&gt;&lt;/a&gt;Activity 启动模式特点&lt;/h3&gt;&lt;p&gt;Activity的启动模式共有4种，默认为standard，其它还有singleTop，singleTask，singleInstance，下面就这4种启动模式分别介绍它们的特点。&lt;/p&gt;
+&lt;h4 id=&quot;1-standard模式&quot;&gt;&lt;a href=&quot;#1-standard模式&quot; class=&quot;headerlink&quot; title=&quot;1)  standard模式&quot;&gt;&lt;/a&gt;1)  standard模式&lt;/h4&gt;&lt;p&gt;standard模式的Activity可以有多个ActivityRecord加入不同的task，同一个task也可存在多个ActivityRecord，并且ActivityRecord还可相邻。&lt;/p&gt;
+&lt;p&gt;假设Activity A的启动模式为standard，那么可能存在如下图所示的回退栈:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://7xrtw9.com1.z0.glb.clouddn.com/standard.png&quot; alt=&quot;standard&quot;&gt;&lt;/p&gt;
+&lt;p&gt;假设Activity A启动Activity B，B的启动模式为standard模式&lt;/p&gt;
+&lt;p&gt;B的ActivityRecord默认会放在A的ActivityRecord所在的task里，即使B和A的taskAffinity不同也会如此，这也意味着如果B和A属于不同的应用，B的ActivityRecord也会放在A的ActivityRecord所在的task里。&lt;/p&gt;
+&lt;p&gt;但是下面两种情况不会将A和B的ActivityRecord放在同一个task里:&lt;/p&gt;
+&lt;p&gt;如果Activity A的启动模式为singleInstance，则会查找整个回退栈，直到找到和B相关的task，然后把B的ActivityRecord放到该task里，如果没有找到相关的task，则新建task，将B的ActivityRecord放到新task里。后面会介绍如何判断Activity和某个task相关。&lt;/p&gt;
+&lt;p&gt;如果Activity A的启动模式为singleTask，并且Activity A和Activity B的taskAffinity不一样，那么也会查找整个回退栈，直到找到和B相关的task，然后把B的ActivityRecord放到该task里。&lt;/p&gt;
+&lt;h4 id=&quot;2-singleTop模式&quot;&gt;&lt;a href=&quot;#2-singleTop模式&quot; class=&quot;headerlink&quot; title=&quot;2)  singleTop模式&quot;&gt;&lt;/a&gt;2)  singleTop模式&lt;/h4&gt;&lt;p&gt;singleTop模式与standard模式比较相似，singleTop模式的Activity可以有多个ActivityRecord加入不同的task，同一个task也可存在多个ActivityRecord,但是同一个task的ActivityRecord不可以相邻。&lt;/p&gt;
+&lt;p&gt;假设Activity A的启动模式为singleTop，那么如下图所示的回退栈就是不合理的:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://7xrtw9.com1.z0.glb.clouddn.com/singleTop_bad.png&quot; alt=&quot;singleTop_bad&quot;&gt;&lt;/p&gt;
+&lt;p&gt;但是可存在如下图所示的回退栈:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://7xrtw9.com1.z0.glb.clouddn.com/singleTop_good.png&quot; alt=&quot;singleTop_good&quot;&gt;&lt;/p&gt;
+&lt;p&gt;假设Activity A启动了Activity B， 这时B在task的栈顶，B的启动模式为singleTop模式。此时从其它Activity也跳转至Activity B，并且启动的task也是已启动的A和B所在的task，或者A和 B所在的task本身就在回退栈的栈顶，那么不会新建B的ActivityRecord，而是会将启动Activity B的Intent传递给栈顶Activity B的ActivityRecrod对应的在应用进程的实例对象，调用它的onNewIntent方法。&lt;/p&gt;
+&lt;p&gt;可以这样模拟此种情况:&lt;/p&gt;
+&lt;p&gt;假设Activity A和Activity B在同一个应用app1里，A是入口Activity，A可跳转至Activity B，B的启动模式为singleTop。此时已从A跳转至B，通知栏有一个启动B的通知，点击通知后，就出现上述情况。&lt;/p&gt;
+&lt;h4 id=&quot;3-singleTask模式&quot;&gt;&lt;a href=&quot;#3-singleTask模式&quot; class=&quot;headerlink&quot; title=&quot;3)  singleTask模式&quot;&gt;&lt;/a&gt;3)  singleTask模式&lt;/h4&gt;&lt;p&gt;singleTask模式和standard模式，singleTop模式区别很大，singleTask模式的Activity在整个回退栈只可以有一个ActivityRecord，也就是说它只能属于某一个task，不可在多个task里存在ActivityRecord。但是在这个task里可以有其它Activity的ActivityRecord。&lt;/p&gt;
+&lt;p&gt;假设Activity A的启动模式为singleTask，那么如下图所示的回退栈就是不合理的:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://7xrtw9.com1.z0.glb.clouddn.com/singleTask_bad.png&quot; alt=&quot;singleTask_bad&quot;&gt;&lt;/p&gt;
+&lt;p&gt;假设Activity A的启动模式为singleTask，那么如下图所示的回退栈就是合理的:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://7xrtw9.com1.z0.glb.clouddn.com/singleTask_good.png&quot; alt=&quot;singleTask_good&quot;&gt;&lt;/p&gt;
+&lt;p&gt;假设Activity A的启动模式为singleTask，那么和Activity A的ActivityRecord放在同一个task里的ActivityRecord所对应的Activity，必须与Activity A的taskAffinity相同。也就是说，Activity A的ActivityRecord只会和同一应用的其它Activity的ActivityRecord放在同一个task里，并且这些同一应用的其它Activity不能设置特殊的taskAffinity。&lt;/p&gt;
+&lt;p&gt;singleTask模式的Activity还有另一个特点:&lt;/p&gt;
+&lt;p&gt;假设Activity A的启动模式是singleTask，A所在的task里，A并没有处于栈顶，此时若从别的Activity跳转至Activity A，那么A所在的task里位于A之上的所有ActivityRecord都会被清除掉。&lt;/p&gt;
+&lt;p&gt;跳转之前回退栈的示意图如下所示:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://7xrtw9.com1.z0.glb.clouddn.com/singeleTask_before.png&quot; alt=&quot;singeleTask_before&quot;&gt;&lt;/p&gt;
+&lt;p&gt;此时从E跳转至A之后，回退栈的示意图如下图所示:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://7xrtw9.com1.z0.glb.clouddn.com/afterjump.png&quot; alt=&quot;afterjump&quot;&gt;&lt;/p&gt;
+&lt;p&gt;也就是说位A所在的task里的C被清除了。&lt;/p&gt;
+&lt;p&gt;另外需注意:&lt;/p&gt;
+&lt;p&gt;只要两个Activity的taskAffinity属性一致，即使其中有一个Activity的启动模式为singleTask，它们对应的ActivityRecord会放在同一个task里，不管是从某个Activity跳转到singleTask类型的Activity，还是从singleTask类型的Activity跳转到其他Activity都是如此，除非跳转的其他Activity的启动模式是singleInstance。Android官方文档对singleTask启动模式的描述不准确。&lt;/p&gt;
+&lt;p&gt;举例如下:&lt;/p&gt;
+&lt;p&gt;假设某个应用有两个Activity A和Activity B，Activity A已启动，Activity B的启动模式为singleTask，Activity B还从未启动过，在AndroidManifest.xml里没有给这两个Activity设置特殊的taskAffinity。此时从Activity A跳转至Activity B，那么Activity B的ActivityRecord会放在Activity A的ActivityRecord所在的task里。&lt;/p&gt;
+&lt;h4 id=&quot;4-singleInstance模式&quot;&gt;&lt;a href=&quot;#4-singleInstance模式&quot; class=&quot;headerlink&quot; title=&quot;4)  singleInstance模式&quot;&gt;&lt;/a&gt;4)  singleInstance模式&lt;/h4&gt;&lt;p&gt;该启动模式和singleTask类似，singleInstance模式的Activity在整个回退栈只可以有一个ActivityRecord，也就是说它只能属于某一个task，不可在多个task里存在ActivityRecord，并且它所在的task不可再有其它Activity的ActivityRecord，即使是同一个应用内的其它Activity，也不可有它们的AcvitityRecord。&lt;/p&gt;
+&lt;p&gt;假设Activity A的启动模式为singleInstance，那么如下图所示的回退栈就是不合理的:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://7xrtw9.com1.z0.glb.clouddn.com/singleInstance_bad.png&quot; alt=&quot;singleInstance_bad&quot;&gt;&lt;/p&gt;
+&lt;p&gt;假设Activity A的启动模式为singleInstance，那么如下图所示的回退栈就是合理的:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://7xrtw9.com1.z0.glb.clouddn.com/singleInstance_good.png&quot; alt=&quot;singleInstance_good&quot;&gt;&lt;/p&gt;
+&lt;p&gt;启动Activity时，有时需要查看回退栈，看是否有和这个Activity相关的task。Activity和某个task相关，有两种情况(假设Activity为A，相关的task为task1):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1)  如果A的启动模式为singleInstance，那么task1只能包含1个ActivityRecord，并且ActivityRecord对应的Activity必须是A  &lt;/li&gt;
+&lt;li&gt;2)A的启动模式不是singleInstance，A的taskAffinity属性和task1的taskAffinity属性必须一样。Task的taskAffinity属性由它包含的第1个ActivityRecord的taskAffinity属性决定。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;注意&quot;&gt;&lt;a href=&quot;#注意&quot; class=&quot;headerlink&quot; title=&quot;注意&quot;&gt;&lt;/a&gt;注意&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;1)  从Launcher程序启动应用时，会先查找所有task，看是否有相关task，如果已有相关task，则会将相关task移动到回退栈的栈顶，然后显示栈顶Activity。查找相关task时，需看task是否和应用的入口Activity相关，入口Activity是指在AndroidManifest.xml里声明IntentFilter时，注明category为android.intent.category.LAUNCHER的Activity。如果入口Activity的启动模式为singleTask，不仅会将相关task移动到回退栈的栈顶，还会将该task里位于入口Activity之上的其它ActivityRecord全部清除掉  &lt;/li&gt;
+&lt;li&gt;2)通过最近应用程序，切换应用时，会直接将应用图标对应的task移动到回退栈的栈顶，这样即使task里有singleTask类型的ActivityRecord，在它之上的ActivityRecord也不会被清除  &lt;/li&gt;
+&lt;li&gt;3)  可以通过adb shell dumpsys activity activties查看系统task情况&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;思考问题&quot;&gt;&lt;a href=&quot;#思考问题&quot; class=&quot;headerlink&quot; title=&quot;思考问题&quot;&gt;&lt;/a&gt;思考问题&lt;/h4&gt;&lt;p&gt;相信大家看了这篇博客以后，可以回答如下关于哪些情况下会产生新task的问题了&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1) 首次启动应用，是否会产生新的task?  &lt;/li&gt;
+&lt;li&gt;2) 假设应用app1的入口Activity(Activity A)启动模式为standard,从A可跳转至Acitivity B，Activity B的启动模式为singleTask，那么启动应用后，从ActivityA跳转到ActivityB是否会产生新的task?  &lt;/li&gt;
+&lt;li&gt;3) 假设应用app1的入口Activity是A,从A可跳转至B，从B可跳转至C,B的启动模式为singleTask，A和C的启动模式为standard，Activity的跳转顺序为A-&amp;gt;B-&amp;gt;C是否会产生新的task? 如果C的启动模式也为singleTask呢？ 如果C的启动模式为singleInstance呢?  &lt;/li&gt;
+&lt;li&gt;4) 假设应用app1的入口Activity是A,从A可跳转至B, B的启动模式为singleTask，A的启动模式为standard,另一个应用app2有一个Activity C，C的启动模式为stanard，C也可跳转至B,目前已从A跳转到B，此时再打开应用app2，从C跳转至B,是否会产生新的task呢？ 如果应用app1没启动，是否会产生新的task呢?  &lt;/li&gt;
+&lt;li&gt;5) 假设应用app1的入口Activity是A,从A可跳转至B,从B可跳转至C， B的启动模式为singleTask，A,C的启动模式为standard，从A跳转至B后，A会finish，假设此时A已跳转至B，B已跳转至C，此时通知栏有一个通知，可启动Activity B，那么点击通知后，会出现什么情况呢?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;转载自： &lt;a href=&quot;http://www.cloudchou.com/android/post-755.html&quot; title=&quot;非常感谢原作者的分享&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;深入理解Activity启动模式&lt;/a&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h3&gt;&lt;p&gt;Android官网介绍Activity的启动模式时比较含糊，介绍Application，Activity，Task，Process，Thread等概念以及它们之间的关系时，也没有说得清楚。大家看了Android官网对Activity启动模式的介绍后，可能会觉得很困惑。官网介绍singleTask启动模式时，说只要启动singleTask启动模式的Activity就会新建Task，但在实际操作中，如果同一个应用的两个Activity，如果其中一个Activity的启动模式为singleTask，一个Activity的启动模式为standard，从其中一个Activity跳转到另外一个Activity，并不会新建Task。&lt;/p&gt;
+&lt;p&gt;为了解除这些困惑，对Activity启动模式做了深入研究，因此写了这一系列博客，详细阐述Application，Activity，Task，Process，Thread等概念概念之间的关系，以及启动模式各自的特点，希望能对大家理解这些概念有所帮助。&lt;/p&gt;
+&lt;p&gt;本系列文章共分3部分:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;深入理解Activity启动模式(一)–Activity与进程，线程的关系&lt;/li&gt;
+&lt;li&gt;深入理解Activity启动模式(二)–Activity,回退栈,Task之间的关系&lt;/li&gt;
+&lt;li&gt;深入理解Activity启动模式(三)–Activity启动模式特点&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="activity启动模式特点, activity启动模式详解, android activity launchmode, android activity启动模式" scheme="http://Wangct23.github.io/tags/activity%E5%90%AF%E5%8A%A8%E6%A8%A1%E5%BC%8F%E7%89%B9%E7%82%B9-activity%E5%90%AF%E5%8A%A8%E6%A8%A1%E5%BC%8F%E8%AF%A6%E8%A7%A3-android-activity-launchmode-android-activity%E5%90%AF%E5%8A%A8%E6%A8%A1%E5%BC%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>网络资源收集</title>
+    <link href="http://Wangct23.github.io/2016/03/14/%E7%BD%91%E7%BB%9C%E8%B5%84%E6%BA%90%E6%94%B6%E9%9B%86/"/>
+    <id>http://Wangct23.github.io/2016/03/14/网络资源收集/</id>
+    <published>2016-03-13T16:00:00.000Z</published>
+    <updated>2016-03-27T02:37:21.816Z</updated>
+    
+    <content type="html">&lt;p&gt;这篇文章旨在收集个人觉得比较赞的一些网络资源，留作以后参考。这样可以免去重复搜索的麻烦，亦可以免去收藏夹的混乱，用一片文章列出来，一目了然。而且，走哪儿都可以访问。还可以自由的添加备注信息，还能不断地补充和修改。&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;ol&gt;
+&lt;li&gt;Android 开发&lt;br&gt; &lt;a href=&quot;http://developer.android.com/develop/index.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;官方API，你懂的&lt;/a&gt;&lt;br&gt; &lt;a href=&quot;http://developer.android.com/develop/index.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://developer.android.com/develop/index.html&lt;/a&gt;&lt;br&gt; &lt;a href=&quot;http://www.jikexueyuan.com/path/android/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;极客学院Android学习线路图&lt;/a&gt;&lt;br&gt; &lt;a href=&quot;http://www.jikexueyuan.com/path/android/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.jikexueyuan.com/path/android/&lt;/a&gt;&lt;br&gt; &lt;a href=&quot;http://www.devtf.cn/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;开发技术前线&lt;/a&gt; 高质量技术文章的聚合网站&lt;br&gt; &lt;a href=&quot;http://www.devtf.cn/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.devtf.cn/&lt;/a&gt;&lt;br&gt; &lt;a href=&quot;http://www.cnblogs.com/meil/archive/2012/05/24/2516055.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;ADB调试，入门&lt;/a&gt;&lt;br&gt; 需要添加一个连接命令：adb connect [device IP]&lt;br&gt; &lt;a href=&quot;http://www.cnblogs.com/meil/archive/2012/05/24/2516055.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.cnblogs.com/meil/archive/2012/05/24/2516055.html&lt;/a&gt;&lt;br&gt; &lt;a href=&quot;http://www.androidchina.net/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Android 开发中文站&lt;/a&gt;&lt;br&gt; &lt;a href=&quot;http://www.androidchina.net/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.androidchina.net/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Github &amp;amp; Git&lt;/li&gt;
+&lt;li&gt;Hexo&lt;br&gt; &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo官方&lt;/a&gt;链接，玩儿Hexo绝对值得收藏&lt;br&gt; &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://hexo.io/&lt;/a&gt;&lt;br&gt; &lt;a href=&quot;http://lovenight.github.io/2015/11/10/Hexo-3-1-1-%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8D%97/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;岁月如歌&lt;/a&gt;的博客：一篇关于Hexo搭建教程，还有些步骤（比如评论功能）没有完成，以后有需求要再次参考&lt;br&gt; &lt;a href=&quot;http://lovenight.github.io/2015/11/10/Hexo-3-1-1-%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8D%97/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://lovenight.github.io/2015/11/10/Hexo-3-1-1-%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8D%97/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Markdown&lt;br&gt; &lt;a href=&quot;http://www.jianshu.com/p/1e402922ee32/#&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Markdown入门指南&lt;/a&gt;，对于现在还不知道Markdown是什么东东的童鞋，有时间要看一下&lt;br&gt; &lt;a href=&quot;http://www.jianshu.com/p/1e402922ee32/#&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.jianshu.com/p/1e402922ee32/#&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;数据库&lt;br&gt; &lt;a href=&quot;http://www.sqlabs.com/sqlitemanager.php&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;SQLite Manager官网，图形化数据库查看&amp;amp;管理软件&lt;/a&gt;&lt;br&gt; &lt;a href=&quot;http://www.sqlabs.com/sqlitemanager.php&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.sqlabs.com/sqlitemanager.php&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;JAVA&lt;br&gt; &lt;a href=&quot;http://www.hawstein.com/posts/google-java-style.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Google Java编程风格指南&lt;/a&gt;&lt;br&gt; &lt;a href=&quot;http://www.hawstein.com/posts/google-java-style.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.hawstein.com/posts/google-java-style.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;这篇文章旨在收集个人觉得比较赞的一些网络资源，留作以后参考。这样可以免去重复搜索的麻烦，亦可以免去收藏夹的混乱，用一片文章列出来，一目了然。而且，走哪儿都可以访问。还可以自由的添加备注信息，还能不断地补充和修改。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="网络资源, blog, 博客, Android, Hexo" scheme="http://Wangct23.github.io/tags/%E7%BD%91%E7%BB%9C%E8%B5%84%E6%BA%90-blog-%E5%8D%9A%E5%AE%A2-Android-Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>搭建hexo + github + sublime + markdown博客系统成功！</title>
+    <link href="http://Wangct23.github.io/2016/03/13/hello-hexo/"/>
+    <id>http://Wangct23.github.io/2016/03/13/hello-hexo/</id>
+    <published>2016-03-13T11:34:00.000Z</published>
+    <updated>2016-03-13T12:21:03.381Z</updated>
+    
+    <content type="html">&lt;p&gt;纸上得来终觉浅，绝知此事要躬行！&lt;/p&gt;
+&lt;p&gt;第一篇文档，没想好写什么。简单记录一下这次的历程。&lt;/p&gt;
+&lt;p&gt;昨天晚上读了@StormZhang一篇的一篇博文《我为什么坚持写博客》，遂引发了我今天这一天的从早到晚的行动。&lt;/p&gt;
+&lt;p&gt;1.先说说安装sublime + markdown吧&lt;br&gt;    直到现在还不太清楚markdown到底是什么东东，只知道很火的样子，大家都在捧，作为跨行过来，初出江湖的小白，我觉得最明智的做法就是跟着主流走，即使遇到问题也容易找到解决办法。然而今天我遇到的第一个问题，在网上就没有搜索到解决方案。问题描述：安装sublime 3103版本，通过下载package control 包，更新后，无法下载插件！！！就这一个小小的问题，着实耽误了不少功夫，遍搜百度谷歌，发现似乎没有人遇到过这个问题。。。在山穷水尽，郁闷万分之际，突发奇想，用代码安装试试？结果，还真就好使了。原因是什么，俺也不想追究，我现在只想能用就行。后来想到，怪不得人家官方在同一个页面提供两种安装方式呢！可能就是因为确实存在我遇到的问题。。。&lt;/p&gt;
+&lt;p&gt;2.搭建Hexo&lt;br&gt;    原本打算使用官方推荐的“github Pages + Jekyll” 组合神器，后来按照入门教程搞出个主页，之后就不知道该做什么了。连最基本的如何发布文章都摸不着头脑，后来不经意间看到了Hexo似乎也是不错的选择，据说对于像我现在这样的初级菜鸟还有在江湖行走多年的老鸟都挺适合。我只能说对于像我这种不愿意为难自己，不喜欢折腾的选手来说，在这个时候看到这篇文章真是太及时了。于是在网上找到了完整教程，写的非常好，过程很详细。如果能够把命令的含义解释一下就更好了。&lt;br&gt;    &lt;a href=&quot;http://sunwhut.com/2015/10/30/buildBlog/?hmsr=toutiao.io&amp;amp;utm_medium=toutiao.io&amp;amp;utm_source=toutiao.io&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://sunwhut.com/2015/10/30/buildBlog/?hmsr=toutiao.io&amp;amp;utm_medium=toutiao.io&amp;amp;utm_source=toutiao.io&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;3.发布第一篇文章&lt;br&gt;    就是正在编辑的这篇文章了。不多说了，赶紧去发布嘚瑟一下，同时给自己一个赞！&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;纸上得来终觉浅，绝知此事要躬行！&lt;/p&gt;
+&lt;p&gt;第一篇文档，没想好写什么。简单记录一下这次的历程。&lt;/p&gt;
+&lt;p&gt;昨天晚上读了@StormZhang一篇的一篇博文《我为什么坚持写博客》，遂引发了我今天这一天的从早到晚的行动。&lt;/p&gt;
+&lt;p&gt;1.先说说安装sublime + 
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
